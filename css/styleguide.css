@@ -1,0 +1,94 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+:root {
+    --color-neutral-light: #ebebeb;
+    --color-neutral-medium: #c0c0c0;
+    --color-neutral-dark: #555;
+
+    --color-main-light: ;
+    --color-main-medium: ;
+    --color-main-dark: ;
+
+    --color-black: #000;
+}
+
+body {
+    margin: 0;
+    font-size: 100%;
+    background-color: var(--color-neutral-light);
+    margin-top: 100px;
+}
+
+a {
+    color: var(--color-black);
+    font-weight: normal;
+    text-decoration: none;
+}
+
+/* LAYOUT CLASSES */
+.container {
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.display-flex {
+    display: flex;
+}
+
+.display-inline-flex {
+    display: inline-flex;
+}
+
+.display-block {
+    display: block;
+}
+
+.display-inline-block {
+    display: inline-block;
+}
+
+.flex-stretch {
+    flex: 1 1 auto;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-none {
+    flex: none;
+}
+
+.flex-align-center {
+    align-items: center;
+}
+
+.flex-justify-center {
+    justify-content: center;
+}
+
+/* COMPONENT CLASSES */
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 2em;
+}
+
+.nav a {
+    display: block;
+    padding: 0.2em 0.5em;
+}
+
+.nav-flex ul {
+    display: flex;
+    padding-inline-start: 0;
+}
+
+.border-bottom {
+    border-bottom: 2px solid black;
+}
