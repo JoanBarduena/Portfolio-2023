@@ -66,6 +66,10 @@ header {
     text-transform: uppercase;
 }
 
+footer {
+    margin-bottom: 10em;
+}
+
 /* LAYOUT CLASSES */
 .container {
     max-width: 65%;
@@ -142,28 +146,53 @@ header {
     padding-left: 2em;
 }
 
-.nav a {
+.nav li {
     display: block;
     padding: 0.2em 0.5em;
-    color: var(--color-neutral-dark);
 }
 
-.nav a.active-link {
-    color: var(--color-black);
+.filter-trigger {
+
+    color: var(--color-neutral-dark);
+
+    &.active {
+        color: var(--color-black);
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
 }
+
+/* .nav a.active-link {
+    color: var(--color-black);
+} */
 
 .nav-flex ul {
     display: flex;
     padding-inline-start: 0;
 }
 
-.border-bottom {
+.project-nav {
     border-bottom: 2px solid black;
 }
 
 .project {
     padding: 4em 0;
     position: relative;
+    border-bottom: 2px solid black;
+
+    opacity: 1;
+    max-height: 1000px;
+    overflow: hidden;
+    transition: all ease-in 0.3s;
+
+    &.hide {
+        opacity: 0;
+        max-height: 0;
+        padding: 0;
+        transition: all ease-out 0.3s;
+    }
 }
 
 .project-img {
