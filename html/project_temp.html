@@ -7,6 +7,7 @@
     <title>Project Template</title>
 
     <link rel="stylesheet" href="../css/styleguide.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
@@ -24,15 +25,40 @@
         </nav>
     </header>
 
-    <div class="project display-flex" style="background-color: lightgreen;">
-        <div class="project-info flex-stretch" style="background-color: lightblue;">
-            <div class="project-text display-flex flex-column flex-space-between">
-                <p>a</p>
-                <p>a</p>
+    <div class="project display-flex">
+        <div class="back-button">
+            <a href="index.html"><i class='bx bx-left-arrow-alt'></i></a>
+        </div>
+        <div class="project-left display-flex flex-column">
+            <div class="project-info">
+                <div class="project-title display-flex">
+                    <div>Project Name</div>
+                    <div class="icons">
+                        <i class="bx bx-link"></i>
+                        <i class="bx bxl-github"></i>
+                    </div>
+                </div>
+                <div class="project-data">
+                    <div><strong>Category: </strong> Videogame</div>
+                    <div><strong>Year: </strong> 2019</div>
+                    <div><strong>Team Size: </strong> Videogame</div>
+                </div>
+                <div class="project-text">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam, aliquid expedita nostrum recusandae
+                    similique illo doloremque neque sapiente suscipit ex consequuntur nemo vel corrupti quis dolores?
+                    Ab,
+                    ratione placeat? Quas!
+                    Corrupti vitae consectetur culpa dolorum sequi doloremque at incidunt eveniet iusto et doloribus
+                    nam,
+                    cupiditate quidem recusandae tempore ratione aliquam obcaecati sint eaque soluta nihil reiciendis
+                    voluptas? Ratione, soluta quod.
+                </div>
             </div>
         </div>
-        <div class="flex-stretch" style="background-color: lightcoral;">
-            Bye
+        <div class="project-carrousel display-flex flex-column">
+            <img class="project-img" src="../img/template.jpg" alt="">
+            <img class="project-img" src="../img/template2.jpg" alt="">
+            <img class="project-img" src="../img/template2.jpg" alt="">
         </div>
     </div>
 </body>

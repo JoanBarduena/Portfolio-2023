@@ -30,14 +30,16 @@ body {
     font-size: 100%;
     font-family: 'Roboto', sans-serif;
     background-color: var(--color-neutral-light);
+    color: var(--color-black);
     padding: 2.6em;
+    padding-bottom: 3.6em;
 }
 
 header {
     margin-right: auto;
     margin-left: auto;
     text-transform: uppercase;
-    padding-bottom: 1em;
+    padding-bottom: 2em;
 }
 
 h1,
@@ -70,6 +72,7 @@ h5 {
 a {
     font-weight: normal;
     text-decoration: none;
+    color: inherit;
 }
 
 
@@ -223,10 +226,87 @@ footer {
     height: 100%;
 }
 
-.project-info {
+.back-button {
+    font-size: 3em;
+}
+
+.project-left {
     height: 90%;
+    flex: 1;
+    justify-content: end;
+}
+
+.project-info {
+    margin-right: 3em;
+    width: 75%;
+}
+
+.project-title {
+    margin-bottom: 1em;
+    padding-bottom: 0.5em;
+
+    font-size: 2em;
+    font-weight: bold;
+
+    border-bottom: 2px solid black;
+
+    justify-content: space-between;
+}
+
+.icons {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+i {
+    cursor: pointer;
+
+    &:hover {
+        opacity: 0.7;
+        /*!! must-change !!*/
+    }
+}
+
+.project-data {
+    margin-bottom: 1em;
+}
+
+.project-data>div {
+    margin-bottom: 1em;
 }
 
 .project-text {
-    height: 100%;
+    margin-top: 2em;
+}
+
+.project-carrousel {
+    flex: 1;
+    align-items: flex-start;
+    overflow-y: auto;
+    scrollbar-width: thin;
+}
+
+.project-carrousel::-webkit-scrollbar {
+    width: 0;
+}
+
+.project-carrousel::-webkit-scrollbar-thumb {
+    background-color: #888;
+}
+
+.project-img {
+    padding: 2em;
+    padding-bottom: 0;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.project-img:first-child {
+    padding-top: .8em;
+}
+
+.project-img:last-child {
+    padding-bottom: 2em;
 }
