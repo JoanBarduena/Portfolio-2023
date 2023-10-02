@@ -1,5 +1,5 @@
 const triggers = document.querySelectorAll('li.filter-trigger');
-const projects = document.querySelectorAll('.project');
+const projects = document.querySelectorAll('.portfolio');
 var all = document.querySelector('.reset');
 
 function clearActive() {

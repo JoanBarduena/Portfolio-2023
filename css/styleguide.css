@@ -53,6 +53,12 @@ p {
 }
 
 h1 {
+    font-size: 48px;
+    margin-bottom: 0.2em;
+    font-weight: 700;
+}
+
+h2 {
     font-size: 6em;
 }
 
@@ -144,12 +150,6 @@ footer {
 }
 
 /* COMPONENT CLASSES */
-.title {
-    height: 10em;
-    margin-bottom: 3em;
-    width: 620px;
-}
-
 .nav ul {
     list-style-type: none;
     margin: 0;
@@ -183,7 +183,32 @@ footer {
     padding-inline-start: 0;
 }
 
+/* START CLASSES  */
+.start {
+    height: 90vh;
+    padding: 8em;
+}
+
+.line {
+    flex: 3;
+    height: 100%;
+    width: 100%;
+    border-left: 2px solid black;
+
+}
+
+.joan {
+    margin-top: 7em;
+    margin-left: 2em;
+}
+
 /* PORTFOLIO CLASSES  */
+.title {
+    height: 10em;
+    margin-bottom: 3em;
+    width: 620px;
+}
+
 .portfolio-nav {
     border-bottom: 2px solid black;
 }
