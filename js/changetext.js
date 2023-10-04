@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let currentTextIndex = 0;
 
     function startTypingAnimation() {
-        changeWord();
+        wordElement.textContent = words[currentTextIndex];
         typingElement.classList.add('typing');
     }
 
@@ -26,16 +26,5 @@ document.addEventListener('DOMContentLoaded', function () {
 
     startTypingAnimation();
 
-    // Fix the loop variable name
     typingElement.addEventListener('animationend', handleAnimationEnd);
-
-    function changeWord() {
-        if (currentTextIndex == 0) {
-            wordElement.textContent = words[0];
-        } else if (currentTextIndex == 1) {
-            wordElement.textContent = words[1];
-        } else if (currentTextIndex == 2) {
-            wordElement.textContent = words[2];
-        }
-    }
 });
