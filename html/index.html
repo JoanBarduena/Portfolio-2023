@@ -32,10 +32,21 @@
         <section>
             <div class="start display-flex flex-align-center">
                 <div class="line">
+                    <p>Start</p>
                     <div class="joan">
-                        <h1>Hi, my name is <span class="">Joan Barduena</span></h1>
-                        <h1>I <span>design</span> and <span>develop</span> websites</h1>
-                        <p>Let me show you...</p>
+                        <h1>Hi, my name is <span class="name">Joan Barduena</span></h1>
+                        <h1 class="static-text">I &nbsp;<span class="design">design&nbsp;</span> and&nbsp;<span
+                                class="develop">develop</span>
+                            <ul class="dynamic-text">
+                                <li><span class="" id="wordElement"></span></li>
+                            </ul>
+                        </h1>
+
+                    </div>
+                    <div class="bullet">
+                    </div>
+                    <div class="scroll">
+                        scroll
                     </div>
                 </div>
 
@@ -45,6 +56,7 @@
             <div class="container title">
                 <h2>Projects</h2>
             </div>
+
             <div class="container display-flex portfolio-nav">
                 <nav class="nav nav-flex flex-none">
                     <ul onclick="resetYears();">
@@ -184,5 +196,6 @@
 
 <script src="../js/filter.js"></script>
 <script src="../js/year.js"></script>
+<script src="../js/changetext.js"></script>
 
 </html>

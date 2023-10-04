@@ -54,6 +54,7 @@ p {
 
 h1 {
     font-size: 48px;
+    height: 70px;
     margin-bottom: 0.2em;
     font-weight: 700;
 }
@@ -194,12 +195,108 @@ footer {
     height: 100%;
     width: 100%;
     border-left: 2px solid black;
+    position: relative;
+    padding-left: 2em;
+}
 
+.bullet {
+    position: absolute;
+    background-color: var(--color-neutral-light);
+    border: 2px solid black;
+    border-radius: 50%;
+    content: "";
+    height: 10px;
+    left: -6px;
+    top: -8px;
+    width: 10px;
+    z-index: -1;
+}
+
+.scroll {
+    bottom: 25%;
+    position: absolute;
+    padding: 4px;
+    transform: translate(-56px, 0) rotate(-90deg);
+    z-index: 1;
+    background-color: var(--color-neutral-light);
 }
 
 .joan {
     margin-top: 7em;
-    margin-left: 2em;
+}
+
+.name {
+    color: dimgray;
+}
+
+.design {
+    font-family: serif;
+}
+
+.develop {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.static-text {
+    display: inline-flex;
+    align-items: baseline;
+}
+
+.dynamic-text {
+    margin: 0;
+    margin-left: 15px;
+    padding-left: 0;
+    height: 70px;
+    line-height: 70px;
+    width: 300px;
+}
+
+.dynamic-text li {
+    list-style: none;
+    position: relative;
+    top: 0;
+}
+
+.dynamic-text li span {
+    position: relative;
+}
+
+.typing::after,
+.untyping::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 120%;
+    width: 100%;
+    background-color: var(--color-neutral-light);
+    border-left: 2px solid var(--color-black);
+}
+
+.typing::after {
+    animation: typing 1.5s steps(10) forwards;
+}
+
+.untyping::after {
+    animation: untyping 1.5s steps(10) forwards;
+}
+
+@keyframes typing {
+    100% {
+        left: 100%;
+        margin: 0 -26px 0 26px;
+    }
+}
+
+@keyframes untyping {
+    0% {
+        left: 100%;
+        margin: 0 -26px 0 26px;
+    }
+
+    100% {
+        left: 0;
+        margin: 0;
+    }
 }
 
 /* PORTFOLIO CLASSES  */
