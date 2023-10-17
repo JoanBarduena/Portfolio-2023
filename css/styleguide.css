@@ -148,6 +148,19 @@ footer {
 
 .flex-end {
     align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.flex-2 {
+    flex: 2;
+}
+
+.flex-3 {
+    flex: 3;
 }
 
 /* COMPONENT CLASSES */
@@ -431,4 +444,67 @@ i {
 
 .project-img:last-child {
     padding-bottom: 2em;
+}
+
+/* ABOUT CLASSES */
+.about {
+    height: 200%;
+    margin: 3em 10em;
+}
+
+.about-left {
+    height: 100%;
+    flex: 2;
+}
+
+.about-right {
+    height: 45%;
+    width: 100%;
+    flex: 3;
+}
+
+.profile-box {
+    padding: 1em;
+    flex: 1;
+}
+
+.box-title {
+    border-bottom: 2px solid black;
+    padding: 1em 0;
+    margin-bottom: 2em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.image-box {
+    flex: 5;
+    padding: 1em;
+}
+
+.profile-info {
+    padding-right: 2em;
+}
+
+.address-box {
+    height: 100%;
+    width: 100%;
+}
+
+.address-box ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.divider {
+    flex-grow: 1;
+    border-bottom: 1px solid black;
+    margin: 10px;
+}
+
+.profile-pic {
+    height: 100%;
+    width: 100%;
+    background-image: url("../img/profile.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
