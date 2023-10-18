@@ -448,27 +448,11 @@ i {
 
 /* ABOUT CLASSES */
 .about {
-    height: 200%;
+    /* height: 200%; */
     margin: 3em 10em;
 }
 
-.about-left {
-    height: 100%;
-    flex: 2;
-}
-
-.about-right {
-    height: 45%;
-    width: 100%;
-    flex: 3;
-}
-
-.profile-box {
-    padding: 1em;
-    flex: 1;
-}
-
-.box-title {
+.profile-title {
     border-bottom: 2px solid black;
     padding: 1em 0;
     margin-bottom: 2em;
@@ -476,35 +460,35 @@ i {
     font-weight: bold;
 }
 
-.image-box {
-    flex: 5;
-    padding: 1em;
+.profile-text {
+    margin-bottom: 2em;
 }
 
 .profile-info {
-    padding-right: 2em;
+    margin-right: 40px;
 }
 
-.address-box {
-    height: 100%;
-    width: 100%;
-}
-
-.address-box ul {
+.personal-data ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
+}
+
+.personal-data li {
+    margin-top: 10px;
 }
 
 .divider {
-    flex-grow: 1;
-    border-bottom: 1px solid black;
+    width: 50px;
+    border-bottom: 2px solid black;
     margin: 10px;
 }
 
 .profile-pic {
-    height: 100%;
+    height: 600px;
     width: 100%;
     background-image: url("../img/profile.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
