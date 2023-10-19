@@ -197,7 +197,7 @@
 }
 
 /* Medium*/
-@media (min-width:550px) {
+@media (min-width:768px) {
     .gap.md-large {
         --grid-gap: 2em;
     }
@@ -264,7 +264,7 @@
 }
 
 /* Large*/
-@media (min-width:900px) {
+@media (min-width:992px) {
     .gap.lg-large {
         --grid-gap: 2em;
     }
