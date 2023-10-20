@@ -8,15 +8,17 @@
 }
 
 :root {
-    --color-neutral-light: #ebebeb;
-    --color-neutral-medium: #c0c0c0;
-    --color-neutral-dark: #555;
+    --color-main-light: #ffec82;
+    --color-main-medium: #FFD800;
+    --color-main-dark: #a88f00;
 
-    --color-main-light: ;
-    --color-main-medium: ;
-    --color-main-dark: ;
+    /* Dark Mode */
+    --color-light: #FAFAFA;
+    --color-dark: #212121;
 
-    --color-black: #000;
+    /* Light Mode */
+    /* --color-light: #212121;
+    --color-dark: #FAFAFA; */
 }
 
 body,
@@ -29,8 +31,8 @@ html {
 body {
     font-size: 100%;
     font-family: 'Roboto', sans-serif;
-    background-color: var(--color-neutral-light);
-    color: var(--color-black);
+    background-color: var(--color-dark);
+    color: var(--color-light);
     padding: 2.6em;
     padding-bottom: 3.6em;
 }
@@ -168,6 +170,7 @@ footer {
     list-style-type: none;
     margin: 0;
     padding-left: 2em;
+    position: relative;
 }
 
 .nav li {
@@ -175,22 +178,29 @@ footer {
     padding: 0.2em 0.5em;
 }
 
+.nav #marker {
+    position: absolute;
+    height: 3px;
+    left: 0;
+    width: 0;
+    background-color: var(--color-main-medium);
+    bottom: -2px;
+    transition: .5s;
+    border-radius: 4px;
+}
+
 .filter-trigger {
 
-    color: var(--color-neutral-dark);
+    color: var(--color-light);
 
     &.active {
-        color: var(--color-black);
+        color: var(--color-main-medium);
     }
 
     &:hover {
         cursor: pointer;
     }
 }
-
-/* .nav a.active-link {
-    color: var(--color-black);
-} */
 
 .nav-flex ul {
     display: flex;
@@ -207,22 +217,22 @@ footer {
     flex: 3;
     height: 100%;
     width: 100%;
-    border-left: 2px solid black;
+    border-left: 2px solid var(--color-main-medium);
     position: relative;
     padding-left: 2em;
 }
 
 .bullet {
     position: absolute;
-    background-color: var(--color-neutral-light);
-    border: 2px solid black;
+    background-color: var(--color-dark);
+    border: 2px solid var(--color-main-medium);
     border-radius: 50%;
     content: "";
     height: 10px;
     left: -6px;
     top: -8px;
     width: 10px;
-    z-index: -1;
+    z-index: 1;
 }
 
 .scroll {
@@ -231,15 +241,15 @@ footer {
     padding: 4px;
     transform: translate(-56px, 0) rotate(-90deg);
     z-index: 1;
-    background-color: var(--color-neutral-light);
+    background-color: var(--color-dark);
 }
 
-.joan {
+.start-text {
     margin-top: 7em;
 }
 
 .name {
-    color: dimgray;
+    color: var(--color-main-medium);
 }
 
 .design {
@@ -281,8 +291,8 @@ footer {
     left: 0;
     height: 120%;
     width: 100%;
-    background-color: var(--color-neutral-light);
-    border-left: 2px solid var(--color-black);
+    background-color: var(--color-dark);
+    border-left: 2px solid var(--color-light);
 }
 
 .typing::after {
@@ -320,13 +330,13 @@ footer {
 }
 
 .portfolio-nav {
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid var(--color-light);
 }
 
 .portfolio {
     padding: 4em 0;
     position: relative;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid var(--color-light);
 
     opacity: 1;
     max-height: 1000px;
@@ -344,6 +354,20 @@ footer {
 .portfolio-img {
     width: 600px;
     max-height: 100%;
+
+    box-shadow: 0px 10px 20px 0 rgba(0, 0, 0, .4);
+    transform: scale(1);
+    transition: all .3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.portfolio-img:hover {
+    box-shadow: 0px 5px 10px 0 rgba(0, 0, 0, .2);
+    transform: scale(1.05);
+    transition: all .3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.porftolio-img:hover~.portfolio-title h4 {
+    color: red;
 }
 
 .portfolio-info {
@@ -353,6 +377,7 @@ footer {
 
 .portfolio-title {
     position: absolute;
+    z-index: 100;
     top: 42%;
 }
 
@@ -383,7 +408,7 @@ footer {
     font-size: 2em;
     font-weight: bold;
 
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid var(--color-light);
 
     justify-content: space-between;
 }
@@ -453,7 +478,7 @@ i {
 }
 
 .profile-title {
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid var(--color-light);
     padding: 10px 0;
     margin-bottom: 2em;
 
@@ -478,7 +503,7 @@ i {
 
 .divider {
     width: 50px;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid var(--color-light);
     margin: 10px;
 }
 
@@ -507,7 +532,6 @@ i {
     padding: 20px;
     background-color: #d8d8d8;
     height: 100%;
-    /* border-left: 2px solid black; */
     transition: ease-in-out 0.3s;
 }
 
@@ -525,9 +549,4 @@ i {
 
 .education-box p {
     line-height: 1.6;
-}
-
-p.subtitle {
-    border-bottom: 2px solid black;
-    margin-bottom: 16px;
 }

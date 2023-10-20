@@ -21,7 +21,7 @@
             <ul>
                 <li><a href="index.html" class="active-link">Home</a></li>
                 <li><a href="portfolios.html">Projects</a></li>
-                <li><a href="">About</a></li>
+                <li><a href="about.html">About</a></li>
                 <li><a href="">Contact</a></li>
             </ul>
         </nav>
@@ -33,7 +33,7 @@
             <div class="start display-flex flex-align-center">
                 <div class="line">
                     <p>Start</p>
-                    <div class="joan">
+                    <div class="start-text">
                         <h1>Hi, my name is <span class="name">Joan Barduena</span></h1>
                         <h1 class="static-text">I &nbsp;<span class="design">design&nbsp;</span> and&nbsp;<span
                                 class="develop">develop</span>
@@ -49,7 +49,6 @@
                         scroll
                     </div>
                 </div>
-
         </section>
 
         <section>
@@ -60,6 +59,7 @@
             <div class="container display-flex portfolio-nav">
                 <nav class="nav nav-flex flex-none">
                     <ul onclick="resetYears();">
+                        <div id="marker"></div>
                         <li class="active reset filter-trigger" data-filter="all">All</li>
                         <li class="filter-trigger" data-filter="web">Web Design</li>
                         <li class="filter-trigger" data-filter="videogames">Videogames</li>
@@ -71,8 +71,11 @@
                     <h3 class="years"></h3>
                 </div>
             </div>
+
+            <!-- ------ PROJECTS LIST ------ -->
+            <!-- Super Mario Bros -->
             <div class="container display-flex portfolio videogames">
-                <div class="portfolio-title">
+                <div class="portfolio-title hover-effect">
                     <h4>Super Mario Bros</h4>
                 </div>
                 <div class="flex-stretch">
@@ -85,7 +88,7 @@
                     </div>
                 </div>
                 <div class="flex-stretch">
-                    <img class="portfolio-img" src="../img/template.jpg" alt="">
+                    <a href="project_temp.html"><img class="portfolio-img" src="../img/template.jpg" alt=""></a>
                 </div>
                 <div class="flex-none">
                     <div class="display-flex flex-column portfolio-info">
@@ -95,7 +98,7 @@
                 </div>
             </div>
             <div class="container display-flex portfolio web">
-                <div class="portfolio-title">
+                <div class="portfolio-title hover-effect">
                     <h4>OMCA: Haui Liu</h4>
                 </div>
                 <div class="flex-stretch">
@@ -118,7 +121,7 @@
                 </div>
             </div>
             <div class="container display-flex portfolio web">
-                <div class="portfolio-title">
+                <div class="portfolio-title hover-effect">
                     <h4>OMCA: Haui Liu</h4>
                 </div>
                 <div class="flex-stretch">
@@ -141,7 +144,7 @@
                 </div>
             </div>
             <div class="container display-flex portfolio web">
-                <div class="portfolio-title">
+                <div class="portfolio-title hover-effect">
                     <h4>OMCA: Haui Liu</h4>
                 </div>
                 <div class="flex-stretch">
@@ -164,7 +167,7 @@
                 </div>
             </div>
             <div class="container display-flex portfolio 3D">
-                <div class="portfolio-title">
+                <div class="portfolio-title hover-effect">
                     <h4>OMCA: Haui Liu</h4>
                 </div>
                 <div class="flex-stretch">
@@ -197,5 +200,6 @@
 <script src="../js/filter.js"></script>
 <script src="../js/year.js"></script>
 <script src="../js/changetext.js"></script>
+<script src="../js/project-hover.js"></script>
 
 </html>
