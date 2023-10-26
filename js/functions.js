@@ -40,7 +40,6 @@ document.addEventListener('DOMContentLoaded', function () {
         function indicator(e) {
             marker.style.left = e.offsetLeft + "px";
             marker.style.width = e.offsetWidth + "px";
-            console.log(marker.style.width);
         }
 
         item.forEach(link => {
@@ -52,31 +51,40 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 // ----- THEME MODE (DARK/LIGHT) -----
-var theme = "dark";
+var theme = "isDark";
+
 const root = document.querySelector(":root");
-const container = document.getElementsByClassName("theme-container");
+const container = document.getElementById("theme-container");
 const themeIcon = document.getElementById("theme-icon");
 
 const sun = "../img/sun.svg";
 const moon = "../img/moon.svg";
 
+function switchTheme() {
+    theme = (theme === "isDark") ? "isLight" : "isDark";
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('theme', theme);
+
+    setTheme();
+}
+
 function setTheme() {
     switch (theme) {
-        case "dark":
+        case "isDark":
             setLight();
-            theme = "light";
+            console.log("setting to light");
             break;
-        case "light":
+        case "isLight":
             setDark();
-            theme = "dark";
+            console.log("setting to dark");
             break;
     }
 }
 
-
 function setLight() {
     root.style.setProperty('--color-light', '#212121');
     root.style.setProperty('--color-dark', '#FAFAFA');
+    container.style.setProperty('--box-shadow', 'rgba(33, 33, 33, 0.5)');
 
     themeIcon.src = sun;
 }
@@ -84,7 +92,15 @@ function setLight() {
 function setDark() {
     root.style.setProperty('--color-light', '#FAFAFA');
     root.style.setProperty('--color-dark', '#212121');
+    container.style.setProperty('--box-shadow', 'rgba(250, 250, 250, 0.3)');
 
     themeIcon.src = moon;
+}
+
+const storedTheme = localStorage.getItem('theme');
+if (storedTheme && (storedTheme === "isDark" || storedTheme === "isLight")) {
+    console.log("stored theme:", storedTheme);
+    theme = storedTheme;
+    //switchTheme();
 }
 

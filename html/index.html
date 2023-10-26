@@ -11,7 +11,7 @@
     <title>Joan Barduena</title>
 </head>
 
-<body onload="displayYears()">
+<body onload="displayYears(); setTheme()">
 
     <!-- !!!!!!!!!!!!!! TODO https://codepen.io/alireza82/pen/poRqBOq -->
 
@@ -30,8 +30,8 @@
         </nav>
     </header>
 
-    <div class="theme-container display-flex flex-align-center">
-        <img src="../img/moon.svg" id="theme-icon" onclick="setTheme()">
+    <div id="theme-container">
+        <img src="../img/moon.svg" id="theme-icon" onclick="switchTheme()">
     </div>
 
     <main>
