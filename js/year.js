@@ -41,8 +41,6 @@ function displayYears() {
         var textNode = document.createTextNode(contentToInsert);
         yearsDiv.appendChild(textNode);
     }
-
-    console.log(years.length);
 }
 
 function resetYears() {

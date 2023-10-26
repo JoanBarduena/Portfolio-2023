@@ -12,13 +12,9 @@
     --color-main-medium: #FFD800;
     --color-main-dark: #a88f00;
 
-    /* Dark Mode */
+    /* Theme Mode */
     --color-light: #FAFAFA;
     --color-dark: #212121;
-
-    /* Light Mode */
-    /* --color-light: #212121;
-    --color-dark: #FAFAFA; */
 }
 
 body,
@@ -31,10 +27,11 @@ html {
 body {
     font-size: 100%;
     font-family: 'Roboto', sans-serif;
-    background-color: var(--color-dark);
-    color: var(--color-light);
     padding: 2.6em;
     padding-bottom: 3.6em;
+
+    background-color: var(--color-dark);
+    color: var(--color-light);
 }
 
 header {
@@ -166,6 +163,10 @@ footer {
 }
 
 /* COMPONENT CLASSES */
+.hidden {
+    display: none;
+}
+
 .nav ul {
     list-style-type: none;
     margin: 0;
@@ -176,13 +177,15 @@ footer {
 .nav li {
     display: block;
     padding: 0.2em 0.5em;
+    cursor: pointer;
 }
 
-.nav #marker {
+.nav #main-marker,
+.nav #portfolio-marker {
     position: absolute;
-    height: 3px;
+    height: 2px;
     left: 0;
-    width: 0;
+    width: 100%;
     background-color: var(--color-main-medium);
     bottom: -2px;
     transition: .5s;
@@ -205,6 +208,26 @@ footer {
 .nav-flex ul {
     display: flex;
     padding-inline-start: 0;
+}
+
+/* HEADER CLASSES  */
+.theme-container {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+    transition: background-color 0.5s ease;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.theme-container:hover {
+    opacity: 0.6;
 }
 
 /* START CLASSES  */

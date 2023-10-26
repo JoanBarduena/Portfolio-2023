@@ -13,7 +13,6 @@ triggers.forEach(element => {
         element.classList.add('active');
 
         let filter = element.dataset.filter;
-        //console.log(filter);
 
         projects.forEach(projects => {
             if (!projects.classList.contains(filter)) {

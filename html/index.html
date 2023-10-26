@@ -13,19 +13,26 @@
 
 <body onload="displayYears()">
 
+    <!-- !!!!!!!!!!!!!! TODO https://codepen.io/alireza82/pen/poRqBOq -->
+
     <header class="display-flex">
         <div class="flex-stretch">
             <h5>&lt; Joan Barduena &#47;&gt;</h5>
         </div>
         <nav class="nav nav-flex flex-none">
-            <ul>
-                <li><a href="index.html" class="active-link">Home</a></li>
-                <li><a href="portfolios.html">Projects</a></li>
+            <ul class="main-nav">
+                <div id="main-marker"></div>
+                <li><a href="" class="active-link">Home</a></li>
+                <li><a href="">Projects</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="">Contact</a></li>
             </ul>
         </nav>
     </header>
+
+    <div class="theme-container display-flex flex-align-center">
+        <img src="../img/moon.svg" id="theme-icon" onclick="setTheme()">
+    </div>
 
     <main>
 
@@ -41,7 +48,6 @@
                                 <li><span id="wordElement" class="typing"></span></li>
                             </ul>
                         </h1>
-
                     </div>
                     <div class="bullet">
                     </div>
@@ -59,7 +65,7 @@
             <div class="container display-flex portfolio-nav">
                 <nav class="nav nav-flex flex-none">
                     <ul onclick="resetYears();">
-                        <div id="marker"></div>
+                        <div id="portfolio-marker"></div>
                         <li class="active reset filter-trigger" data-filter="all">All</li>
                         <li class="filter-trigger" data-filter="web">Web Design</li>
                         <li class="filter-trigger" data-filter="videogames">Videogames</li>
@@ -72,8 +78,11 @@
                 </div>
             </div>
 
-            <!-- ------ PROJECTS LIST ------ -->
-            <!-- Super Mario Bros -->
+            <!------------------------------>
+            <!-------- PROJECT LIST -------->
+            <!------------------------------>
+
+            <!-- SUPER MARIO BROS -->
             <div class="container display-flex portfolio videogames">
                 <div class="portfolio-title hover-effect">
                     <h4>Super Mario Bros</h4>
@@ -82,8 +91,8 @@
                     <div class="display-flex flex-column portfolio-info">
                         <div>2D Platformer Game</div>
                         <div class="display-inline-flex">
-                            <div class="year-number">2019</div>
-                            <div>/Web Design</div>
+                            <div class="year-number">2019&nbsp;&sol;</div>
+                            <div>&nbsp;Web Design</div>
                         </div>
                     </div>
                 </div>
@@ -92,11 +101,17 @@
                 </div>
                 <div class="flex-none">
                     <div class="display-flex flex-column portfolio-info">
-                        <p></p>
-                        <p>View the --------- portfolio </p>
+                        <div></div>
+                        <div class="display-flex">
+                            <span>View the</span>
+                            <span class="divider"></span>
+                            <span>project</span>
+                        </div>
                     </div>
                 </div>
             </div>
+
+            <!-- xxxxxxxxxxx -->
             <div class="container display-flex portfolio web">
                 <div class="portfolio-title hover-effect">
                     <h4>OMCA: Haui Liu</h4>
@@ -200,6 +215,6 @@
 <script src="../js/filter.js"></script>
 <script src="../js/year.js"></script>
 <script src="../js/changetext.js"></script>
-<script src="../js/project-hover.js"></script>
+<script src="../js/functions.js"></script>
 
 </html>
