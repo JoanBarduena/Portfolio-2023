@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
 
+    dataTheme();
+
     // ----- HOVER EFFECT ON H4 PROJECT-TITLE
     var containers = document.querySelectorAll('.container');
 
@@ -51,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 // ----- THEME MODE (DARK/LIGHT) -----
-var theme = "isDark";
+var theme = "Dark";
 
 const root = document.querySelector(":root");
 const container = document.getElementById("theme-container");
@@ -61,46 +63,60 @@ const sun = "../img/sun.svg";
 const moon = "../img/moon.svg";
 
 function switchTheme() {
-    theme = (theme === "isDark") ? "isLight" : "isDark";
+    theme = (theme === "Dark") ? "Light" : "Dark";
     document.documentElement.setAttribute('data-theme', theme);
     localStorage.setItem('theme', theme);
 
+    dataTheme();
+}
+
+function dataTheme() {
+    document.body.setAttribute("data-theme", theme);
     setTheme();
 }
 
 function setTheme() {
     switch (theme) {
-        case "isDark":
+        case "Light":
             setLight();
-            console.log("setting to light");
+
             break;
-        case "isLight":
+        case "Dark":
             setDark();
-            console.log("setting to dark");
             break;
     }
 }
 
 function setLight() {
-    root.style.setProperty('--color-light', '#212121');
-    root.style.setProperty('--color-dark', '#FAFAFA');
-    container.style.setProperty('--box-shadow', 'rgba(33, 33, 33, 0.5)');
-
-    themeIcon.src = sun;
+    if (container) {
+        container.style.setProperty('--box-shadow', 'rgba(33, 33, 33, 0.5)');
+        themeIcon.src = sun;
+    }
 }
 
 function setDark() {
-    root.style.setProperty('--color-light', '#FAFAFA');
-    root.style.setProperty('--color-dark', '#212121');
-    container.style.setProperty('--box-shadow', 'rgba(250, 250, 250, 0.3)');
+    if (container) {
+        container.style.setProperty('--box-shadow', 'rgba(250, 250, 250, 0.3)');
+        themeIcon.src = moon;
+    }
 
-    themeIcon.src = moon;
 }
 
 const storedTheme = localStorage.getItem('theme');
-if (storedTheme && (storedTheme === "isDark" || storedTheme === "isLight")) {
-    console.log("stored theme:", storedTheme);
+if (storedTheme && (storedTheme === "Dark" || storedTheme === "Light")) {
     theme = storedTheme;
-    //switchTheme();
+    console.log("storedTheme: ", theme);
 }
+
+// ----- SET IFRAME HEIGHT AS PROJECT-IMAGES
+function setIframeHeight() {
+    var imgHeight = document.querySelector('.project-img').clientHeight;
+    document.getElementById('videoIframe').style.height = imgHeight + 'px';
+}
+
+setIframeHeight();
+window.addEventListener('resize', setIframeHeight);
+
+
+
 
