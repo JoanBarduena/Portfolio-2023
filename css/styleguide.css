@@ -412,10 +412,15 @@ footer {
     top: 42%;
 }
 
+.portfolio-title h4 {
+    text-shadow: 0 0 10px var(--main-color);
+}
+
 /* PROJECT CLASSES  */
 .project {
     height: 100%;
     padding: 20px;
+    transition: padding 1s;
 }
 
 .back-button {
@@ -453,6 +458,7 @@ footer {
 
 i {
     cursor: pointer;
+    transition: color 0.3s;
 
     &:hover {
         color: var(--color-main-medium);
