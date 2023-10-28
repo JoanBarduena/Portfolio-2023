@@ -456,7 +456,7 @@ footer {
     align-content: center;
 }
 
-i {
+.bx {
     cursor: pointer;
     transition: color 0.3s;
 
@@ -567,16 +567,15 @@ iframe {
 .my-skills,
 .education {
     margin-right: 0;
-    margin-left: 10%;
+    margin-left: 0;
 }
 
 .icon-box {
     display: flex;
     align-items: center;
     padding: 20px;
-    background-color: #d8d8d8;
     height: 100%;
-    transition: ease-in-out 0.3s;
+    /* transition: ease-in-out 0.3s; */
 }
 
 .icon-box img {

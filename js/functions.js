@@ -59,6 +59,12 @@ const root = document.querySelector(":root");
 const container = document.getElementById("theme-container");
 const themeIcon = document.getElementById("theme-icon");
 
+const iconBoxes = document.querySelectorAll(".icon-box");
+const educationBoxes = document.querySelectorAll(".education-box");
+
+const lightColorBoxes = "rgba(216, 216, 216, 1)";
+const darkColorBoxes = "rgba(85, 85, 85, 1)";
+
 const sun = "../img/sun.svg";
 const moon = "../img/moon.svg";
 
@@ -92,6 +98,11 @@ function setLight() {
         container.style.setProperty('--box-shadow', 'rgba(33, 33, 33, 0.5)');
         themeIcon.src = sun;
     }
+
+    if (iconBoxes || educationBoxes) {
+        loopBoxes(iconBoxes, lightColorBoxes);
+        loopBoxes(educationBoxes, lightColorBoxes);
+    }
 }
 
 function setDark() {
@@ -99,7 +110,16 @@ function setDark() {
         container.style.setProperty('--box-shadow', 'rgba(250, 250, 250, 0.3)');
         themeIcon.src = moon;
     }
+    if (iconBoxes) {
+        loopBoxes(iconBoxes, darkColorBoxes);
+        loopBoxes(educationBoxes, darkColorBoxes);
+    }
+}
 
+function loopBoxes(boxes, color) {
+    for (let i = 0; i < boxes.length; i++) {
+        boxes[i].style.backgroundColor = color;
+    }
 }
 
 const storedTheme = localStorage.getItem('theme');
