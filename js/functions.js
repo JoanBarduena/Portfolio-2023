@@ -65,8 +65,15 @@ const educationBoxes = document.querySelectorAll(".education-box");
 const lightColorBoxes = "rgba(216, 216, 216, 1)";
 const darkColorBoxes = "rgba(85, 85, 85, 1)";
 
-const sun = "../img/sun.svg";
-const moon = "../img/moon.svg";
+var sun = "../img/sun.svg";
+var moon = "../img/moon.svg";
+
+const projectID = document.getElementById("projectID");
+
+if (projectID) {
+    sun = "../" + sun;
+    moon = "../" + moon;
+}
 
 function switchTheme() {
     theme = (theme === "Dark") ? "Light" : "Dark";
@@ -136,7 +143,3 @@ function setIframeHeight() {
 
 setIframeHeight();
 window.addEventListener('resize', setIframeHeight);
-
-
-
-

@@ -28,6 +28,7 @@ html {
     margin: 0;
     padding: 0;
     height: 100%;
+    scroll-behavior: smooth !important;
 }
 
 body {
@@ -416,6 +417,12 @@ footer {
     text-shadow: 0 0 10px var(--main-color);
 }
 
+.portfolio-view-project {
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+}
+
 /* PROJECT CLASSES  */
 .project {
     height: 100%;
@@ -435,7 +442,7 @@ footer {
 
 .project-info {
     margin-right: 3em;
-    width: 75%;
+    width: 90%;
 }
 
 .project-title {
@@ -470,7 +477,7 @@ footer {
 }
 
 .project-data {
-    margin-bottom: 1em;
+    margin-bottom: 2em;
 }
 
 .project-data>div {
@@ -483,6 +490,14 @@ footer {
 
 .project-text p {
     margin-top: 10px;
+}
+
+.project-text a {
+    color: var(--color-main-medium);
+
+    &:hover {
+        color: var(--color-main-dark)
+    }
 }
 
 .project-carrousel {
@@ -547,7 +562,7 @@ iframe {
 
 .divider {
     width: 50px;
-    border-bottom: 2px solid var(--secondary-color);
+    border-top: 2px solid var(--secondary-color);
     margin: 10px;
 }
 
