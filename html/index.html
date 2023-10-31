@@ -32,10 +32,9 @@
         <img src="../img/moon.svg" id="theme-icon" onclick="switchTheme()">
     </div>
 
-    <main>
-
+    <main class="section">
         <section>
-            <div class="start display-flex flex-align-center">
+            <div class="start">
                 <div class="line">
                     <p>Start</p>
                     <div class="start-text">
@@ -50,7 +49,9 @@
                     <div class="bullet">
                     </div>
                     <div class="scroll">
-                        scroll
+                        scroll down
+                    </div>
+                    <div class="arrow">
                     </div>
                 </div>
         </section>
@@ -103,7 +104,7 @@
                         <div></div>
                         <a class="portfolio-view-project" href="/html/projects/project_xmultiply.html">
                             <span>View the</span>
-                            <span class="divider"></span>
+                            <span class="divider-portfolio"></span>
                             <span>project</span>
                         </a>
                     </div>
@@ -133,7 +134,7 @@
                         <div></div>
                         <a class="portfolio-view-project" href="/html/projects/project_upsidedown.html">
                             <span>View the</span>
-                            <span class="divider"></span>
+                            <span class="divider-portfolio"></span>
                             <span>project</span>
                         </a>
                     </div>
@@ -163,7 +164,7 @@
                         <div></div>
                         <a class="portfolio-view-project" href="/html/projects/project_command.html">
                             <span>View the</span>
-                            <span class="divider"></span>
+                            <span class="divider-portfolio"></span>
                             <span>project</span>
                         </a>
                     </div>
@@ -193,7 +194,7 @@
                         <div></div>
                         <a class="portfolio-view-project" href="/html/projects/project_rgbeam.html">
                             <span>View the</span>
-                            <span class="divider"></span>
+                            <span class="divider-portfolio"></span>
                             <span>project</span>
                         </a>
                     </div>
@@ -223,7 +224,7 @@
                         <div></div>
                         <a class="portfolio-view-project" href="/html/projects/project_tankbang.html">
                             <span>View the</span>
-                            <span class="divider"></span>
+                            <span class="divider-portfolio"></span>
                             <span>project</span>
                         </a>
                     </div>
@@ -253,7 +254,7 @@
                         <div></div>
                         <a class="portfolio-view-project" href="/html/projects/project_tankbang.html">
                             <span>View the</span>
-                            <span class="divider"></span>
+                            <span class="divider-portfolio"></span>
                             <span>project</span>
                         </a>
                     </div>
@@ -263,14 +264,239 @@
         </section>
     </main>
 
+    <div class="about section" style="background-color: -lightcoral;">
+        <section class="display-flex">
+            <div class="about-left display-flex flex-2 flex-column flex-space-between"
+                style="background-color: -lightblue;">
+                <h2>about</h2>
+            </div>
+            <div class="about-right flex-3 display-flex flex-column" style="background-color: -lightsalmon;">
+                <div class="profile-container" style="background-color: -lightgreen;">
+                    <div class="profile-title">
+                        My Profile
+                    </div>
+                    <div class="profile-text display-flex" style="background-color: -lightyellow;">
+                        <div class="profile-info flex-1 display-flex flex-column flex-space-between">
+                            <div class="profile-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi animi tenetur
+                                ducimus ipsum aliquid,
+                                voluptatum quam, aliquam recusandae corporis illum atque, error veniam deleniti impedit.
+                                Quod
+                                cum
+                                expedita et inventore.
+                                Aspernatur soluta fuga qui in, expedita ipsa corrupti repudiandae harum dolore odio
+                                nobis
+                                nesciunt
+                                ratione necessitatibus. Perferendis voluptate culpa ea aliquam voluptas earum numquam,
+                                placeat,
+                                qui
+                                eligendi ratione, amet aut?
+                                Eaque dolorem qui maxime velit laborum consequuntur est commodi voluptas eum!
+                                Necessitatibus
+                                vitae
+                                minima fugiat odio magni impedit est, fuga ab maiores iusto doloremque vel enim,
+                                assumenda,
+                                repellat
+                                architecto dolor.
+                                Distinctio, maiores amet unde eos iusto dolorem qui ipsum vitae debitis accusamus totam?
+                                Obcaecati
+                                totam enim illum ex reiciendis cumque vel libero itaque velit ut deserunt tempore, harum
+                                inventore
+                                saepe.
+                            </div>
+                            <div class="personal-data" style="background-color: -lightseagreen;">
+                                <ul>
+                                    <li class="display-flex flex-end">
+                                        <span style="font-weight: bold;">Date of Birth</span>
+                                        <span class="divider-about"></span>
+                                        <span>May 17, 1999</span>
+                                    </li>
+                                    <li class="display-flex flex-end">
+                                        <span style="font-weight: bold;">Phone</span>
+                                        <span class="divider-about"></span>
+                                        <span>+34 682269578</span>
+                                    </li>
+                                    <li class="display-flex flex-end">
+                                        <span style="font-weight: bold;">Email</span>
+                                        <span class="divider-about"></span>
+                                        <span>joanbardu@gmail.com</span>
+                                    </li>
+                                    <li class="display-flex flex-end">
+                                        <span style="font-weight: bold;">Ubication</span>
+                                        <span class="divider-about"></span>
+                                        <span>Barcelona, Spain</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="profile-pic flex-1"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="my-skills" style="background-color:-lightslategrey;">
+            <div class="profile-title">
+                My skills
+            </div>
+            <div class="grid gap">
+                <div class="col-lg-3 col-md-4">
+                    <div class="icon-box">
+                        <img src="../img/c++.png" alt="">
+                        <h5>C++</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <div class="icon-box">
+                        <img src="../img/html.png" alt="">
+                        <h5>HTML &sol; CSS</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <div class="icon-box">
+                        <img src="../img/javascript.png" alt="">
+                        <h5>Javascript</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <div class="icon-box">
+                        <img src="../img/php.png" alt="">
+                        <h5>PHP</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <div class="icon-box">
+                        <img src="../img/csharp.png" alt="">
+                        <h5>C Sharp<h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <div class="icon-box">
+                        <img src="../img/unity.png" alt="">
+                        <h5>Unity</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <div class="icon-box">
+                        <img src="../img/unrealengine.png" alt="">
+                        <h5>Unreal Engine</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <div class="icon-box">
+                        <img src="../img/blender.png" alt="">
+                        <h5>Blender</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <div class="icon-box">
+                        <img src="../img/substance.png" alt="">
+                        <h5>Substance Painter &amp; Designer</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <div class="icon-box">
+                        <img src="../img/zbrush.jpg" alt="">
+                        <h5>Zbrush</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <div class="icon-box">
+                        <img src="../img/photoshop.png" alt="">
+                        <h5>Adobe Photoshop</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <div class="icon-box">
+                        <img src="../img/illustrator.png" alt="">
+                        <h5>Adobe Illustrator</h5>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="education">
+            <div class="profile-title">
+                Education
+            </div>
+            <div class="grid gap">
+                <div class="col-lg-3 col-md-6">
+                    <div class="education-box">
+                        <p><b>Bachillerato Tecnológico</b></p>
+                        <p>Escola Pia Santa Anna Mataró</p>
+                        <p>Mataró, Spain</p>
+                        <p>2015 &ndash; 2017</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="education-box">
+                        <p><b>Bachelor's degree in Video Game Design and Development</b></p>
+                        <p>Centre Imatge i Tecnologia Multimèdia &lpar;UPC&rpar;</p>
+                        <p>Barcelona, Spain</p>
+                        <p>2017 &ndash; 2022</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="education-box">
+                        <p><b>B2 First Certificate in English &lpar;FCE&rpar;</b></p>
+                        <p>Cambridge University</p>
+                        <p>2014</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="education-box">
+                        <p><b>Master's degree in Interaction &amp; UI&sol;UX Design</b></p>
+                        <p>Academy of Art University</p>
+                        <p>San Francisco, USA</p>
+                        <p>2022 &ndash; 2023</p>
+                        <p><i>&lpar;Only completed 18 of 36 credits&rpar;</i></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
     <footer>
-        <p></p>
+        <section class="display-flex flex-align-center flex-2">
+            <div class="footer-title">
+                Joan Barduena
+            </div>
+            <div class="footer-middle display-flex flex-column">
+                <div class="footer-links">
+                    <ul class="footer-nav">
+                        <li><a href="">Home</a></li>
+                        <li><a href="index.html#portfolio">Projects</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-copyright">
+                    &copy; 2023 Joan Barduena All Rights Reserved
+                </div>
+            </div>
+        </section>
+        <section class="display-flex flex-column flex-justify-center flex-1">
+            <div class="footer-icons">
+                <a href="" target="_blank" title="website">
+                    <div class="fa-brands fa-artstation fa-xl"></div>
+                </a>
+                <a href="" target="_blank" title="github">
+                    <div class="fa-brands fa-linkedin fa-xl"></div>
+                </a>
+                <a href="" target="_blank" title="github">
+                    <div class="fa-brands fa-github fa-xl"></div>
+                </a>
+            </div>
+            <div class="footer-email">
+                email: joanbardu&#64;gmail.com
+            </div>
+        </section>
     </footer>
+
 </body>
 
 <script src="../js/functions.js"></script>
 <script src="../js/filter.js"></script>
 <script src="../js/year.js"></script>
 <script src="../js/changetext.js"></script>
+<script src="https://kit.fontawesome.com/8ccb274948.js" crossorigin="anonymous"></script>
 
 </html>

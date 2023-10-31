@@ -34,11 +34,15 @@ html {
 body {
     font-size: 100%;
     font-family: 'Roboto', sans-serif;
-    padding: 2.6em;
+    /* padding: 2.6em; */
     /* padding-bottom: 3.6em; */
 
     background-color: var(--main-color);
     color: var(--secondary-color);
+}
+
+main {
+    padding: 2.6em;
 }
 
 header {
@@ -46,6 +50,7 @@ header {
     margin-left: auto;
     text-transform: uppercase;
     padding-bottom: 2em;
+    padding: 2.6em;
 }
 
 h1,
@@ -96,7 +101,7 @@ footer {
 
 /* LAYOUT CLASSES */
 .container {
-    max-width: 70%;
+    max-width: 80%;
     margin-right: auto;
     margin-left: auto;
 }
@@ -228,8 +233,9 @@ footer {
     bottom: 20px;
     right: 20px;
 
-    --box-shadow: rgba(250, 250, 250, 0.3);
+    background-color: var(--main-color);
 
+    --box-shadow: rgba(250, 250, 250, 0.3);
     box-shadow: 0px 0px 10px 0 var(--box-shadow);
 
     display: flex;
@@ -242,18 +248,23 @@ footer {
 }
 
 /* START CLASSES  */
+
 .start {
     height: 90vh;
     padding: 8em;
 }
 
 .line {
-    flex: 3;
     height: 100%;
     width: 100%;
     border-left: 2px solid var(--color-main-medium);
     position: relative;
     padding-left: 2em;
+    z-index: -1;
+}
+
+.start-text {
+    margin-top: 7em;
 }
 
 .bullet {
@@ -263,23 +274,35 @@ footer {
     border-radius: 50%;
     content: "";
     height: 10px;
-    left: -6px;
+
     top: -8px;
     width: 10px;
     z-index: 1;
 }
 
 .scroll {
-    bottom: 25%;
+    top: 75%;
     position: absolute;
     padding: 4px;
-    transform: translate(-56px, 0) rotate(-90deg);
+    transform: translate(-79px, 0) rotate(-90deg);
     z-index: 1;
     background-color: var(--main-color);
 }
 
-.start-text {
-    margin-top: 7em;
+.arrow {
+    position: absolute;
+    border: solid var(--secondary-color);
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 4px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    bottom: -12px;
+}
+
+.bullet,
+.arrow {
+    left: -6px;
 }
 
 .name {
@@ -367,6 +390,10 @@ footer {
     border-bottom: 2px solid var(--secondary-color);
 }
 
+.portfolio:last-child {
+    border-bottom: none;
+}
+
 .portfolio {
     padding: 4em 0;
     position: relative;
@@ -419,7 +446,11 @@ footer {
     text-shadow: 0 0 10px var(--main-color);
 }
 
-.portfolio-left-col {}
+.divider-portfolio {
+    width: 50px;
+    margin: 10px;
+    border-top: 2px solid var(--secondary-color);
+}
 
 .portfolio-view-project {
     text-transform: uppercase;
@@ -473,7 +504,8 @@ footer {
     align-content: center;
 }
 
-.bx {
+.bx,
+.fa-brands {
     cursor: pointer;
     transition: color 0.3s;
 
@@ -536,19 +568,20 @@ footer {
     object-fit: contain;
 }
 
-
 iframe {
     width: 100%;
 }
 
 /* ABOUT CLASSES */
 .about {
-    height: 2000px;
-    margin: 3em 10em;
+    background-color: var(--secondary-color);
+    color: var(--main-color);
+    padding: 10em;
+    padding-bottom: 5em;
 }
 
 .profile-title {
-    border-bottom: 2px solid var(--secondary-color);
+    border-bottom: 2px solid var(--main-color);
     padding: 10px 0;
     margin-bottom: 2em;
 
@@ -571,10 +604,10 @@ iframe {
     margin-top: 10px;
 }
 
-.divider {
+.divider-about {
     width: 50px;
-    border-top: 2px solid var(--secondary-color);
     margin: 10px;
+    border-top: 2px solid var(--main-color);
 }
 
 .profile-pic {
@@ -594,6 +627,7 @@ iframe {
 .education {
     margin-right: 0;
     margin-left: 0;
+    color: var(--main-color);
 }
 
 .icon-box {
@@ -601,6 +635,7 @@ iframe {
     align-items: center;
     padding: 20px;
     height: 100%;
+    color: var(--main-color);
     /* transition: ease-in-out 0.3s; */
 }
 
@@ -611,11 +646,69 @@ iframe {
 }
 
 .education-box {
-    background-color: #d8d8d8;
     padding: 20px;
     height: 100%;
+    color: var(--main-color);
 }
 
 .education-box p {
     line-height: 1.6;
+}
+
+/* ------ FOOTER ------ */
+footer {
+    height: 200px;
+    padding: 0 100px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+}
+
+footer section {
+    width: 100%;
+    height: 100%;
+}
+
+.footer-middle {
+    padding: 20px 20px;
+    border-left: 2px solid var(--secondary-color);
+    opacity: 0.7;
+}
+
+.footer-title {
+    font-size: 30px;
+    font-weight: bold;
+    padding-right: 30px;
+}
+
+.footer-links ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+
+}
+
+.footer-nav {
+    display: flex;
+}
+
+.footer-nav li {
+    display: block;
+    cursor: pointer;
+    padding-right: 10px;
+
+    &:hover {
+        opacity: 0.7;
+    }
+}
+
+.footer-copyright,
+.footer-email {
+    margin-top: 10px;
+}
+
+.fa-brands {
+    padding-right: 10px;
 }
