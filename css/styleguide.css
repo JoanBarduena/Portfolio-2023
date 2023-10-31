@@ -203,12 +203,14 @@ footer {
 
     color: var(--secondary-color);
 
-    &.active {
-        color: var(--color-main-medium);
-    }
-
     &:hover {
         cursor: pointer;
+        opacity: 0.7;
+    }
+
+    &.active {
+        color: var(--color-main-medium);
+        opacity: 1;
     }
 }
 
@@ -417,10 +419,18 @@ footer {
     text-shadow: 0 0 10px var(--main-color);
 }
 
+.portfolio-left-col {}
+
 .portfolio-view-project {
     text-transform: uppercase;
     display: flex;
     align-items: center;
+
+    cursor: pointer;
+
+    &:hover {
+        opacity: 0.7;
+    }
 }
 
 /* PROJECT CLASSES  */
@@ -490,6 +500,7 @@ footer {
 
 .project-text p {
     margin-top: 10px;
+    line-height: 20x;
 }
 
 .project-text a {
