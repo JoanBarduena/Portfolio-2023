@@ -93,12 +93,6 @@ a {
     color: inherit;
 }
 
-
-footer {
-    /* margin-top: 5em;
-    height: 10em; */
-}
-
 /* LAYOUT CLASSES */
 .container {
     max-width: 80%;
@@ -251,7 +245,7 @@ footer {
 
 .start {
     height: 90vh;
-    padding: 8em;
+    padding: 5vh 10vw 18vh 8vw;
 }
 
 .line {
@@ -657,18 +651,63 @@ iframe {
 
 /* ------ FOOTER ------ */
 footer {
-    height: 200px;
-    padding: 0 100px;
-    width: 100%;
+    height: 40vh;
+    padding: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
+.contact {
+    width: 70%;
+    padding-bottom: 50px;
+    padding-left: 10%;
+    padding-right: 10%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+.telephone,
+.email,
+.location {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--color-main-medium);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+    margin-bottom: 20px;
+}
+
+footer section {
+    width: 70%;
+    margin-top: 5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left {
     display: flex;
     align-items: center;
 }
 
-footer section {
-    width: 100%;
-    height: 100%;
-}
+.footer-right {}
 
 .footer-middle {
     padding: 20px 20px;
