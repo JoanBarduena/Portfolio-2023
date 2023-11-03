@@ -28,8 +28,8 @@
         </nav>
     </header>
 
-    <div id="theme-container">
-        <img src="../img/moon.svg" id="theme-icon" onclick="switchTheme()">
+    <div id="theme-container" onclick="switchTheme()">
+        <img src="../img/moon.svg" id="theme-icon">
     </div>
 
     <main class="section">
@@ -65,10 +65,10 @@
                 <nav class="nav nav-flex flex-none">
                     <ul onclick="resetYears();">
                         <div id="portfolio-marker"></div>
-                        <li class="active reset filter-trigger" data-filter="all">All</li>
-                        <li class="filter-trigger" data-filter="web">Web Design</li>
-                        <li class="filter-trigger" data-filter="videogames">Videogames</li>
-                        <li class="filter-trigger" data-filter="3D">3D Art</li>
+                        <li class="active reset filter-trigger hoverable" data-filter="all">All</li>
+                        <li class="filter-trigger hoverable" data-filter="web">Web Design</li>
+                        <li class="filter-trigger hoverable" data-filter="videogames">Videogames</li>
+                        <li class="filter-trigger hoverable" data-filter="3D">3D Art</li>
                     </ul>
                 </nav>
                 <div class="flex-stretch"></div>
@@ -96,7 +96,7 @@
                     </div>
                 </div>
                 <div class="flex-3 display-flex flex-justify-center">
-                    <a href="/html/projects/project_xmultiply.html"><img class="portfolio-img"
+                    <a href="/html/projects/project_xmultiply.html" class="hoverable"><img class="portfolio-img"
                             src="../img/projects/xmultiply.jpeg" alt=""></a>
                 </div>
                 <div class="flex-1">
@@ -454,43 +454,6 @@
         </section>
     </div>
 
-    <!-- <footer>
-        <section class="footer-left">
-            <div class="footer-title">
-                Joan Barduena
-            </div>
-            <div class="footer-middle display-flex flex-column">
-                <div class="footer-links">
-                    <ul class="footer-nav">
-                        <li><a href="">Home</a></li>
-                        <li><a href="index.html#portfolio">Projects</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-copyright">
-                    &copy; 2023 Joan Barduena All Rights Reserved
-                </div>
-            </div>
-        </section>
-        <section class="footer-right">
-            <div class="footer-icons">
-                <a href="" target="_blank" title="website">
-                    <div class="fa-brands fa-artstation fa-xl"></div>
-                </a>
-                <a href="" target="_blank" title="github">
-                    <div class="fa-brands fa-linkedin fa-xl"></div>
-                </a>
-                <a href="" target="_blank" title="github">
-                    <div class="fa-brands fa-github fa-xl"></div>
-                </a>
-            </div>
-            <div class="footer-email">
-                email: joanbardu&#64;gmail.com
-            </div>
-        </section>
-    </footer> -->
-
     <footer>
         <div class="contact">
             <div class="telephone">
@@ -539,23 +502,36 @@
             </div>
             <div class="footer-right">
                 <div class="footer-icons">
-                    <a href="" target="_blank" title="website">
+                    <a href="https://www.artstation.com/joanbarduena" target="_blank" title="ArtStation">
                         <div class="fa-brands fa-artstation fa-xl"></div>
                     </a>
-                    <a href="" target="_blank" title="github">
+                    <a href="https://www.linkedin.com/in/joanbarduena/" target="_blank" title="LinkedIn">
                         <div class="fa-brands fa-linkedin fa-xl"></div>
                     </a>
-                    <a href="" target="_blank" title="github">
+                    <a href="https://github.com/JoanBarduena" target="_blank" title="Github">
                         <div class="fa-brands fa-github fa-xl"></div>
                     </a>
                 </div>
             </div>
         </section>
-
     </footer>
 
+    <div class="cursor">
+        <div class="cursor-ball cursor-ball-big ">
+            <svg height="30" width="30">
+                <circle cx="15" cy="15" r="12" stroke-width="0"></circle>
+            </svg>
+        </div>
+        <div class="cursor-ball cursor-ball-small">
+            <svg height="10" width="10">
+                <circle cx="5" cy="5" r="4" stroke-width="0"></circle>
+            </svg>
+        </div>
+    </div>
 </body>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+<script src="../js/cursor.js"></script>
 <script src="../js/functions.js"></script>
 <script src="../js/filter.js"></script>
 <script src="../js/year.js"></script>

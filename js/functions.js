@@ -92,7 +92,6 @@ function setTheme() {
     switch (theme) {
         case "Light":
             setLight();
-
             break;
         case "Dark":
             setDark();
@@ -136,10 +135,11 @@ if (storedTheme && (storedTheme === "Dark" || storedTheme === "Light")) {
 }
 
 // ----- SET IFRAME HEIGHT AS PROJECT-IMAGES
-function setIframeHeight() {
-    var imgHeight = document.querySelector('.project-img').clientHeight;
-    document.getElementById('videoIframe').style.height = imgHeight + 'px';
-}
+// function setIframeHeight() {
+//     var imgHeight = document.querySelector('.project-img').clientHeight;
+//     document.getElementById('video-iframe').style.height = imgHeight + 'px';
+// }
 
-setIframeHeight();
-window.addEventListener('resize', setIframeHeight);
+// setIframeHeight();
+// window.addEventListener('resize', setIframeHeight);
+
