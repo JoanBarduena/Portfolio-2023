@@ -11,28 +11,27 @@
     <title>Joan Barduena</title>
 </head>
 
-<body onload="dataTheme(); displayYears()">
+<body onload="displayYears()">
 
     <header class="display-flex">
         <div class="flex-stretch">
-            <h5>&lt; Joan Barduena &#47;&gt;</h5>
+            <h5>Joan Barduena</h5>
         </div>
         <nav class="nav nav-flex flex-none">
             <ul class="main-nav">
-                <div id="main-marker"></div>
-                <li><a href="" class="active-link">Home</a></li>
-                <li><a href="index.html#portfolio" id="portfolio-link">Projects</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="index.html#home" class="active">Home</a></li>
+                <li><a href="index.html#portfolio">Projects</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <div id="theme-container" onclick="switchTheme()">
+    <div id="theme-container" onclick="switchTheme()" class="hoverable">
         <img src="../img/moon.svg" id="theme-icon">
     </div>
 
-    <main class="section">
+    <main class="section" id="home">
         <section>
             <div class="start">
                 <div class="line">
@@ -264,18 +263,17 @@
         </section>
     </main>
 
-    <div class="about section" style="background-color: -lightcoral;">
+    <div class="about section" id="about">
         <section class="display-flex">
-            <div class="about-left display-flex flex-2 flex-column flex-space-between"
-                style="background-color: -lightblue;">
+            <div class="about-left display-flex flex-2 flex-column flex-space-between">
                 <h2>about</h2>
             </div>
-            <div class="about-right flex-3 display-flex flex-column" style="background-color: -lightsalmon;">
-                <div class="profile-container" style="background-color: -lightgreen;">
+            <div class="about-right flex-3 display-flex flex-column">
+                <div class="profile-container">
                     <div class="profile-title">
                         My Profile
                     </div>
-                    <div class="profile-text display-flex" style="background-color: -lightyellow;">
+                    <div class="profile-text display-flex">
                         <div class="profile-info flex-1 display-flex flex-column flex-space-between">
                             <div class="profile-text">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi animi tenetur
@@ -304,7 +302,7 @@
                                 inventore
                                 saepe.
                             </div>
-                            <div class="personal-data" style="background-color: -lightseagreen;">
+                            <div class="personal-data">
                                 <ul>
                                     <li class="display-flex flex-end">
                                         <span style="font-weight: bold;">Date of Birth</span>
@@ -455,7 +453,7 @@
     </div>
 
     <footer>
-        <div class="contact">
+        <div class="contact" id="contact">
             <div class="telephone">
                 <div class="icon">
                     <div class="fa-solid fa-phone fa-lg"></div>
@@ -530,9 +528,9 @@
     </div>
 </body>
 
+<script src="../js/functions.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
 <script src="../js/cursor.js"></script>
-<script src="../js/functions.js"></script>
 <script src="../js/filter.js"></script>
 <script src="../js/year.js"></script>
 <script src="../js/changetext.js"></script>

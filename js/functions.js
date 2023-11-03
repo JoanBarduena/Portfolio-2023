@@ -27,12 +27,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var marker = document.querySelector('#portfolio-marker');
     var item = document.querySelectorAll('.filter-trigger');
 
-    var marker2 = document.querySelector('#main-marker');
-    var item2 = document.querySelectorAll('.main-nav .active-link');
-
     navAnimation(marker, item);
-    navAnimation(marker2, item2);
-
 
     function navAnimation(marker, item) {
         if (item.length > 0) {
@@ -133,6 +128,12 @@ if (storedTheme && (storedTheme === "Dark" || storedTheme === "Light")) {
     theme = storedTheme;
     console.log("storedTheme: ", theme);
 }
+
+//----- ADD ANCHOR ELEMENTS CLASS="HOVERABLE" 
+var links = document.querySelectorAll('a');
+links.forEach(function (link) {
+    link.classList.add('hoverable');
+});
 
 // ----- SET IFRAME HEIGHT AS PROJECT-IMAGES
 // function setIframeHeight() {
