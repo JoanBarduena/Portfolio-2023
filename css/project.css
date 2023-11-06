@@ -1,0 +1,111 @@
+/* PROJECT CLASSES  */
+.project {
+    height: 100%;
+    padding: 3%;
+    transition: padding 1s;
+}
+
+.back-button {
+    font-size: 3em;
+}
+
+.project-left {
+    height: 100%;
+    flex: 1;
+    justify-content: end;
+}
+
+.project-info {
+    margin-right: 3em;
+    width: 90%;
+}
+
+.project-title {
+    margin-bottom: 1em;
+    padding-bottom: 0.5em;
+
+    font-size: 2em;
+    font-weight: bold;
+
+    border-bottom: 2px solid var(--color-main-medium);
+
+    justify-content: space-between;
+}
+
+.icons {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.bx,
+.fa-brands {
+    transition: color 0.3s;
+
+    &:hover {
+        color: var(--color-main-medium);
+    }
+
+    &:active {
+        color: var(--color-main-dark);
+    }
+}
+
+.project-data {
+    margin-bottom: 2em;
+}
+
+.project-data>div {
+    margin-bottom: 1em;
+}
+
+.project-text {
+    margin-top: 2em;
+}
+
+.project-text p {
+    margin-top: 10px;
+    line-height: 20x;
+}
+
+.project-text a {
+    color: var(--color-main-medium);
+
+    &:hover {
+        color: var(--color-main-dark)
+    }
+}
+
+.project-carrousel {
+    flex: 1;
+    align-items: flex-start;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    height: 100%;
+    position: relative;
+}
+
+.project-carrousel::-webkit-scrollbar {
+    width: 0;
+}
+
+.project-carrousel::-webkit-scrollbar-thumb {
+    background-color: #888;
+}
+
+.project-img {
+    padding: 2em;
+    padding-bottom: 0;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+video::-webkit-media-controls-play-button,
+video::-webkit-media-controls-volume-slider-container,
+video::-webkit-media-controls-volume-slider,
+video::-webkit-media-controls-mute-button,
+video::-webkit-media-controls-timeline,
+video::-webkit-media-controls-fullscreen-button {
+    cursor: none;
+}

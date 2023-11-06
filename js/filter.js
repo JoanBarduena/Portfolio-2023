@@ -1,10 +1,10 @@
 const triggers = document.querySelectorAll('li.filter-trigger');
-const projects = document.querySelectorAll('.portfolio');
+const projects = document.querySelectorAll('.portfolio-nav');
 var all = document.querySelector('.reset');
 
 function clearActive() {
     var activeLink = document.querySelector('.active');
-    activeLink.classList.remove("active");
+    activeLink.classList.remove('active');
 }
 
 triggers.forEach(element => {

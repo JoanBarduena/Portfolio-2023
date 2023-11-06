@@ -5,8 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="../css/styleguide.css">
     <link rel="stylesheet" href="../css/gridsystem.css">
+    <link rel="stylesheet" href="../css/styleguide.css">
+    <link rel="stylesheet" href="../css/project.css">
+    <link rel="stylesheet" href="../css/about.css">
+    <link rel="stylesheet" href="../css/footer.css">
 
     <title>Joan Barduena</title>
 </head>
@@ -19,11 +22,12 @@
         </div>
         <nav class="nav nav-flex flex-none">
             <ul class="main-nav">
-                <li><a href="index.html#home" class="active">Home</a></li>
+                <li><a href="index.html#home">Home</a></li>
                 <li><a href="index.html#portfolio">Projects</a></li>
                 <li><a href="index.html#about">About</a></li>
                 <li><a href="index.html#contact">Contact</a></li>
             </ul>
+            <div class="hamburger-menu">&#9776;</div>
         </nav>
     </header>
 
@@ -38,8 +42,13 @@
                     <p>Start</p>
                     <div class="start-text">
                         <h1>Hi, my name is <span class="name">Joan Barduena</span></h1>
-                        <h1 class="static-text">I &nbsp;<span class="design">design&nbsp;</span> and&nbsp;<span
-                                class="develop">develop</span>
+                        <h1 class="static-text">
+
+                            <span>I &nbsp;</span>
+                            <span class="design">design&nbsp;</span>
+                            <span>and&nbsp;</span>
+                            <span class="develop">develop</span>
+
                             <ul class="dynamic-text">
                                 <li><span id="wordElement" class="typing"></span></li>
                             </ul>
@@ -64,7 +73,7 @@
                 <nav class="nav nav-flex flex-none">
                     <ul onclick="resetYears();">
                         <div id="portfolio-marker"></div>
-                        <li class="active reset filter-trigger hoverable" data-filter="all">All</li>
+                        <li class="filter-trigger active reset hoverable" data-filter="all">All</li>
                         <li class="filter-trigger hoverable" data-filter="web">Web Design</li>
                         <li class="filter-trigger hoverable" data-filter="videogames">Videogames</li>
                         <li class="filter-trigger hoverable" data-filter="3D">3D Art</li>
@@ -126,7 +135,7 @@
                 </div>
                 <div class="flex-3 display-flex flex-justify-center">
                     <a href="/html/projects/project_upsidedown.html"><img class="portfolio-img"
-                            src="../img/projects/upsidedown_2.png" alt=""></a>
+                            src="../img/projects/upsidedown_1.png" alt=""></a>
                 </div>
                 <div class="flex-1">
                     <div class="display-flex flex-column portfolio-info">
@@ -263,6 +272,7 @@
         </section>
     </main>
 
+    <!-- 
     <div class="about section" id="about">
         <section class="display-flex">
             <div class="about-left display-flex flex-2 flex-column flex-space-between">
@@ -450,9 +460,9 @@
                 </div>
             </div>
         </section>
-    </div>
+    </div> -->
 
-    <footer>
+    <!-- <footer>
         <div class="contact" id="contact">
             <div class="telephone">
                 <div class="icon">
@@ -487,10 +497,10 @@
                 <div class="footer-middle display-flex flex-column">
                     <div class="footer-links">
                         <ul class="footer-nav">
-                            <li><a href="">Home</a></li>
+                            <li><a href="index.html#home">Home</a></li>
                             <li><a href="index.html#portfolio">Projects</a></li>
-                            <li><a href="">About</a></li>
-                            <li><a href="">Contact</a></li>
+                            <li><a href="index.html#about">About</a></li>
+                            <li><a href="index.html#contact">Contact</a></li>
                         </ul>
                     </div>
                     <div class="footer-copyright">
@@ -512,7 +522,7 @@
                 </div>
             </div>
         </section>
-    </footer>
+    </footer> -->
 
     <div class="cursor">
         <div class="cursor-ball cursor-ball-big ">

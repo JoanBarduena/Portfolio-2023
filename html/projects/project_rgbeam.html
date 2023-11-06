@@ -8,6 +8,7 @@
 
     <base href="../../">
     <link rel="stylesheet" href="../../css/styleguide.css">
+    <link rel="stylesheet" href="css/project.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
@@ -54,16 +55,28 @@
         </div>
         <div class="project-carrousel display-flex flex-column">
             <img class="project-img" src="img/projects/rgbeam_1.png" alt="">
-            <div class="project-img">
-                <iframe id="videoIframe" src="https://www.youtube.com/embed/9jS6Bpy3YF0" title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen></iframe>
-            </div>
+            <video class="project-img" controls autoplay muted loop>
+                <source src="/img/videos/rgbeam.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+    <div class="cursor">
+        <div class="cursor-ball cursor-ball-big ">
+            <svg height="30" width="30">
+                <circle cx="15" cy="15" r="12" stroke-width="0"></circle>
+            </svg>
+        </div>
+        <div class="cursor-ball cursor-ball-small">
+            <svg height="10" width="10">
+                <circle cx="5" cy="5" r="4" stroke-width="0"></circle>
+            </svg>
         </div>
     </div>
 </body>
 
 <script src="js/functions.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+<script src="../js/cursor.js"></script>
 
 </html>

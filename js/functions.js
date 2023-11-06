@@ -14,11 +14,11 @@ document.addEventListener('DOMContentLoaded', function () {
             titleToAffect.style.transition = 'font-size 0.3s ease-in-out';
 
             portfolioImg.addEventListener('mouseover', function () {
-                titleToAffect.style.fontSize = '3.2em'; // Change this to your desired font size
+                titleToAffect.style.fontSize = '3.2em';
             });
 
             portfolioImg.addEventListener('mouseout', function () {
-                titleToAffect.style.fontSize = '3em'; // Reset the font size on mouseout if needed
+                titleToAffect.style.fontSize = '3em';
             });
         }
     });
@@ -45,6 +45,14 @@ document.addEventListener('DOMContentLoaded', function () {
             })
         })
     }
+
+    // ----- HAMBURGUER MENU -----
+    var hamburgerMenu = document.querySelector('.hamburger-menu');
+    var mainNav = document.querySelector('.main-nav');
+
+    hamburgerMenu.addEventListener('click', function () {
+        mainNav.classList.toggle('active');
+    });
 });
 
 // ----- THEME MODE (DARK/LIGHT) -----
@@ -131,6 +139,7 @@ if (storedTheme && (storedTheme === "Dark" || storedTheme === "Light")) {
 
 //----- ADD ANCHOR ELEMENTS CLASS="HOVERABLE" 
 var links = document.querySelectorAll('a');
+var titles = document.querySelectorAll('h4')
 links.forEach(function (link) {
     link.classList.add('hoverable');
 });
