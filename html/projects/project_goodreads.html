@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project - Goodreads</title>
+
+    <base href="../../">
+    <link rel="stylesheet" href="../../css/styleguide.css">
+    <link rel="stylesheet" href="css/project.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body onload="dataTheme()" id="projectID">
+
+    <div id="theme-container">
+        <img src="img/moon.svg" id="theme-icon" onclick="switchTheme()">
+    </div>
+
+    <div class="project display-flex">
+        <div class="back-button">
+            <a href="javascript:void(0);" onclick="goBack()"><i class='bx bx-left-arrow-alt'></i></a>
+        </div>
+        <div class="project-left display-flex flex-column">
+            <div class="project-info">
+                <div class="project-title display-flex">
+                    <div>
+                        Goodreads (redesign)
+                    </div>
+                    <div class="icons">
+                    </div>
+                </div>
+                <div class="project-data">
+                    <div><strong>Category: </strong> Website</div>
+                    <div><strong>Year: </strong> 2023</div>
+                    <div><strong>Team Size: </strong> Myself</div>
+                </div>
+                <div class="project-text">
+                    <p>
+                        Goodreads has a very dense website, as it tries to show all the information without the use of
+                        menus and submenus.
+                    </p>
+                    <p>
+                        In this project, I tried to give a more minimalistic style, giving emphasis to
+                        the book covers with the use of light colors and, using some filters to hide unnecessary
+                        information.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="project-carrousel display-flex flex-column">
+            <img class="project-img" src="img/projects/goodreads_1.jpg" alt="">
+            <img class="project-img" src="img/projects/goodreads_2.jpg" alt="">
+            <img class="project-img" src="img/projects/goodreads_3.jpg" alt="">
+
+        </div>
+    </div>
+
+    <div class="cursor">
+        <div class="cursor-ball cursor-ball-big ">
+            <svg height="30" width="30">
+                <circle cx="15" cy="15" r="12" stroke-width="0"></circle>
+            </svg>
+        </div>
+        <div class="cursor-ball cursor-ball-small">
+            <svg height="10" width="10">
+                <circle cx="5" cy="5" r="4" stroke-width="0"></circle>
+            </svg>
+        </div>
+    </div>
+</body>
+
+<script src="js/functions.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+<script src="../js/cursor.js"></script>
+<script src="https://kit.fontawesome.com/8ccb274948.js" crossorigin="anonymous"></script>
+
+</html>

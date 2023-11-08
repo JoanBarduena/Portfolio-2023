@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project - Nesskain: Cyborg Unit 259</title>
+
+    <base href="../../">
+    <link rel="stylesheet" href="../../css/styleguide.css">
+    <link rel="stylesheet" href="css/project.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body onload="dataTheme()" id="projectID">
+
+    <div id="theme-container">
+        <img src="img/moon.svg" id="theme-icon" onclick="switchTheme()">
+    </div>
+
+    <div class="project display-flex">
+        <div class="back-button">
+            <a href="javascript:void(0);" onclick="goBack()"><i class='bx bx-left-arrow-alt'></i></a>
+        </div>
+        <div class="project-left display-flex flex-column">
+            <div class="project-info">
+                <div class="project-title display-flex">
+                    <div>
+                        Nesskain: Cyborg Unit 259
+                    </div>
+                    <div class="icons">
+                        <a href="https://www.artstation.com/artwork/VyLwAR" target="_blank" title="artstation">
+                            <div class="fa-brands fa-artstation fa-sm"></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-data">
+                    <div><strong>Category: </strong> 3D Art</div>
+                    <div><strong>Year: </strong> 2022</div>
+                    <div><strong>Team Size: </strong> Myself</div>
+                </div>
+                <div class="project-text">
+                    <p>
+                        Fan art of Cyborg Unit concept from <a href="https://www.artstation.com/artwork/8lWBBO"
+                            target="_blank">Nesskain HKS</a>.
+                    </p>
+                    <p>Modeled in Blender, sculped in Zbrush, textured in Substance Painter and rendered in Marmoset
+                        Toolbag 3.</p>
+                </div>
+            </div>
+        </div>
+        <div class="project-carrousel display-flex flex-column">
+            <video class="project-img" controls autoplay muted loop>
+                <source src="/img/videos/nesskain.mp4" type="video/mp4">
+            </video>
+            <img class="project-img" src="img/projects/nesskain_1.jpg" alt="">
+            <img class="project-img" src="img/projects/nesskain_3.jpg" alt="">
+            <img class="project-img" src="img/projects/nesskain_4.jpg" alt="">
+            <img class="project-img" src="img/projects/nesskain_2.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="cursor">
+        <div class="cursor-ball cursor-ball-big ">
+            <svg height="30" width="30">
+                <circle cx="15" cy="15" r="12" stroke-width="0"></circle>
+            </svg>
+        </div>
+        <div class="cursor-ball cursor-ball-small">
+            <svg height="10" width="10">
+                <circle cx="5" cy="5" r="4" stroke-width="0"></circle>
+            </svg>
+        </div>
+    </div>
+</body>
+
+<script src="js/functions.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+<script src="../js/cursor.js"></script>
+<script src="https://kit.fontawesome.com/8ccb274948.js" crossorigin="anonymous"></script>
+
+
+</html>

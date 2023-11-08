@@ -1,5 +1,5 @@
 const triggers = document.querySelectorAll('li.filter-trigger');
-const projects = document.querySelectorAll('.portfolio-nav');
+const projects = document.querySelectorAll('.portfolio');
 var all = document.querySelector('.reset');
 
 function clearActive() {
@@ -13,6 +13,7 @@ triggers.forEach(element => {
         element.classList.add('active');
 
         let filter = element.dataset.filter;
+        console.log(filter);
 
         projects.forEach(projects => {
             if (!projects.classList.contains(filter)) {

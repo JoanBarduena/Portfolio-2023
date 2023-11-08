@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project - Stylized Medieval Village</title>
+
+    <base href="../../">
+    <link rel="stylesheet" href="../../css/styleguide.css">
+    <link rel="stylesheet" href="css/project.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body onload="dataTheme()" id="projectID">
+
+    <div id="theme-container">
+        <img src="img/moon.svg" id="theme-icon" onclick="switchTheme()">
+    </div>
+
+    <div class="project display-flex">
+        <div class="back-button">
+            <a href="javascript:void(0);" onclick="goBack()"><i class='bx bx-left-arrow-alt'></i></a>
+        </div>
+        <div class="project-left display-flex flex-column">
+            <div class="project-info">
+                <div class="project-title display-flex">
+                    <div>
+                        Stylized Medieval Village
+                    </div>
+                    <div class="icons">
+                        <a href="https://www.unrealengine.com/marketplace/en-US/product/36b48176712249b7b96e43b44ae38c9c"
+                            target="_blank" title="website">
+                            <div class="bx bx-link"></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-data">
+                    <div><strong>Category: </strong> 3D Art</div>
+                    <div><strong>Year: </strong> 2022</div>
+                    <div><strong>Copies sold: </strong> &lt;100</div>
+                </div>
+                <div class="project-text">
+                    <p>
+                        This stylized medieval village asset pack was my Bachelor's Thesis. It contains a set of
+                        stylized modular walls, roofs, doors, windows, stairs and street decorations, so the user can
+                        create their customized environment.
+                    </p>
+                    <p> I created every single mesh and texture from scratch.</p>
+                    <p>
+                        I used Blender (3D Model), Adobe Substance Designer
+                        (tileable textures), Adobe Substance Painter (singular prop textures) and Unreal Engine 4.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="project-carrousel display-flex flex-column">
+            <video class="project-img" controls autoplay muted loop>
+                <source src="/img/videos/assetpack.mp4" type="video/mp4">
+            </video>
+            <img class="project-img" src="img/projects/assetpack_6.jpg" alt="">
+            <img class="project-img" src="img/projects/assetpack_7.jpg" alt="">
+            <img class="project-img" src="img/projects/assetpack_2.jpg" alt="">
+            <img class="project-img" src="img/projects/assetpack_3.jpg" alt="">
+            <img class="project-img" src="img/projects/assetpack_4.jpg" alt="">
+            <img class="project-img" src="img/projects/assetpack_5.jpeg" alt="">
+        </div>
+    </div>
+
+    <div class="cursor">
+        <div class="cursor-ball cursor-ball-big ">
+            <svg height="30" width="30">
+                <circle cx="15" cy="15" r="12" stroke-width="0"></circle>
+            </svg>
+        </div>
+        <div class="cursor-ball cursor-ball-small">
+            <svg height="10" width="10">
+                <circle cx="5" cy="5" r="4" stroke-width="0"></circle>
+            </svg>
+        </div>
+    </div>
+</body>
+
+<script src="js/functions.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+<script src="../js/cursor.js"></script>
+
+</html>

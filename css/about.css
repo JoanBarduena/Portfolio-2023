@@ -20,6 +20,11 @@
     margin-right: 40px;
 }
 
+.profile-text p {
+    line-height: 25px;
+    margin-bottom: 25px;
+}
+
 .personal-data ul {
     list-style-type: none;
     padding: 0;

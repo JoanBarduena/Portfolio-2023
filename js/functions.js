@@ -153,3 +153,17 @@ links.forEach(function (link) {
 // setIframeHeight();
 // window.addEventListener('resize', setIframeHeight);
 
+// ----- PROJECT GO-BACK BUTTON ANCHOR LINK 
+function goBack() {
+
+    if (history.length > 1) {
+        history.back();
+    } else {
+        window.location.href = "/html/index.html#portfolio"; //go back to Projects title if not history
+    }
+}
+window.addEventListener('popstate', function (event) {
+    var currentURL = window.location.pathname;
+})
+
+

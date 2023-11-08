@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project - The Witcher</title>
+
+    <base href="../../">
+    <link rel="stylesheet" href="../../css/styleguide.css">
+    <link rel="stylesheet" href="css/project.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body onload="dataTheme()" id="projectID">
+
+    <div id="theme-container">
+        <img src="img/moon.svg" id="theme-icon" onclick="switchTheme()">
+    </div>
+
+    <div class="project display-flex">
+        <div class="back-button">
+            <a href="javascript:void(0);" onclick="goBack()"><i class='bx bx-left-arrow-alt'></i></a>
+        </div>
+        <div class="project-left display-flex flex-column">
+            <div class="project-info">
+                <div class="project-title display-flex">
+                    <div>
+                        The Witcher: Ties of Destiny
+                    </div>
+                    <div class="icons">
+                        <a href="https://tiesofdestiny.com/" target="_blank" title="website">
+                            <div class="bx bx-link"></div>
+                        </a>
+                        <a href="https://github.com/Broken-Gem-Studio" target="_blank" title="github">
+                            <div class="bx bxl-github"></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-data">
+                    <div><strong>Category: </strong> Videogame</div>
+                    <div><strong>Year: </strong> 2020</div>
+                    <div><strong>Team Size: </strong> 29</div>
+                </div>
+                <div class="project-text">
+                    <p>The Witcher: Ties of Destiny is a 3D Hack and Slash with fast pacing mechanics which takes place
+                        in The Witcher universe.
+                    </p>
+                    <p>The game was developed with <a href="https://github.com/Broken-Gem-Studio/Broken-Engine"
+                            target="_blank">Broken Engine</a> (our own open-source 3D game engine built from the ground
+                        with C++ and OpenGL).
+                    </p>
+                    <p>The game website was developed by Xavi Marin and I, which took us more than 300 hours. It was
+                        created from a template and programmed with CSS and HTML5.
+                    </p>
+                    <p>
+                        Here you have my <a href="https://tiesofdestiny.com/portfolios/portfolio-joanbarduena.html"
+                            target="_blank">
+                            project contribution</a>.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="project-carrousel display-flex flex-column">
+            <video class="project-img" controls autoplay muted loop>
+                <source src="/img/videos/thewitcher.mp4" type="video/mp4">
+            </video>
+            <img class="project-img" src="img/projects/thewitcher_3.png" alt="">
+            <img class="project-img" src="img/projects/thewitcher_4.png" alt="">
+            <img class="project-img" src="img/projects/thewitcher_2.png" alt="">
+            <img class="project-img" src="img/projects/thewitcher_1.png" alt="">
+        </div>
+    </div>
+
+    <div class="cursor">
+        <div class="cursor-ball cursor-ball-big ">
+            <svg height="30" width="30">
+                <circle cx="15" cy="15" r="12" stroke-width="0"></circle>
+            </svg>
+        </div>
+        <div class="cursor-ball cursor-ball-small">
+            <svg height="10" width="10">
+                <circle cx="5" cy="5" r="4" stroke-width="0"></circle>
+            </svg>
+        </div>
+    </div>
+</body>
+
+<script src="js/functions.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+<script src="../js/cursor.js"></script>
+
+</html>
