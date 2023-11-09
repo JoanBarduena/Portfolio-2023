@@ -490,6 +490,9 @@ a {
     fill: #FAFAFA;
 }
 
+.hamburger-menu {
+    display: none;
+}
 
 /* HAMBURGUER MENU  */
 @media screen and (max-width: 768px) {
