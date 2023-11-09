@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Add transition to the title within the container
         if (titleToAffect) {
-            titleToAffect.style.transition = 'font-size 0.3s ease-in-out';
+            titleToAffect.style.transition = '-webkit-font-size 0.3s ease-in-out, font-size 0.3s ease-in-out';
 
             portfolioImg.addEventListener('mouseover', function () {
                 titleToAffect.style.fontSize = '3.2em';
@@ -68,8 +68,8 @@ const educationBoxes = document.querySelectorAll(".education-box");
 const lightColorBoxes = "rgba(85, 85, 85, 1)";
 const darkColorBoxes = "rgba(216, 216, 216, 1)";
 
-var sun = "../img/sun.svg";
-var moon = "../img/moon.svg";
+var sun = "img/sun.svg";
+var moon = "img/moon.svg";
 
 const projectID = document.getElementById("projectID");
 
@@ -155,7 +155,6 @@ links.forEach(function (link) {
 
 // ----- PROJECT GO-BACK BUTTON ANCHOR LINK 
 function goBack() {
-
     if (history.length > 1) {
         history.back();
     } else {
