@@ -41,13 +41,9 @@
   border-top: 2px solid var(--main-color);
 }
 
-.profile-pic {
-  height: 600px;
-  width: 100%;
-  background-image: url("../img/profile.jpeg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+.profile-pic img {
+  width: auto;
+  height: 500px;
 }
 
 .about section {
@@ -99,6 +95,10 @@
     padding: 20px;
   }
 
+  .about-left {
+    margin-bottom: 20px;
+  }
+
   .about section {
     margin-bottom: 0px;
   }
@@ -113,5 +113,19 @@
 
   .profile-text {
     flex-direction: column;
+  }
+
+  .personal-data {
+    margin-bottom: 20px;
+  }
+
+  .profile-pic img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  section.my-skills {
+    margin-bottom: 20px;
   }
 }

@@ -71,13 +71,6 @@ const darkColorBoxes = "rgba(216, 216, 216, 1)";
 var sun = "img/sun.svg";
 var moon = "img/moon.svg";
 
-const projectID = document.getElementById("projectID");
-
-if (projectID) {
-  //   sun = "../" + sun;
-  //   moon = "../" + moon;
-}
-
 function switchTheme() {
   theme = theme === "Dark" ? "Light" : "Dark";
   document.documentElement.setAttribute("data-theme", theme);

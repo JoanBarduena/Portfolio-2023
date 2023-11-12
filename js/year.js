@@ -1,4 +1,3 @@
-
 const years = [];
 var yearsDiv = document.querySelector('.years');
 
