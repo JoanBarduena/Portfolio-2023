@@ -1,87 +1,117 @@
 /* ABOUT CLASSES */
 .about {
-    background-color: var(--secondary-color);
-    color: var(--main-color);
-    padding: 10em;
-    padding-bottom: 5em;
+  background-color: var(--secondary-color);
+  color: var(--main-color);
+  padding: 10em;
+  padding-bottom: 5em;
 }
 
 .profile-title {
-    border-bottom: 2px solid var(--main-color);
-    padding: 10px 0;
-    margin-bottom: 2em;
+  border-bottom: 2px solid var(--main-color);
+  padding: 10px 0;
+  margin-bottom: 2em;
 
-    font-size: 18px;
-    text-transform: uppercase;
-    font-weight: bold;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 .profile-info {
-    margin-right: 40px;
+  margin-right: 40px;
 }
 
 .profile-text p {
-    line-height: 25px;
-    margin-bottom: 25px;
+  line-height: 25px;
+  margin-bottom: 25px;
 }
 
 .personal-data ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 .personal-data li {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 .divider-about {
-    width: 50px;
-    margin: 10px;
-    border-top: 2px solid var(--main-color);
+  width: 50px;
+  margin: 10px;
+  border-top: 2px solid var(--main-color);
 }
 
 .profile-pic {
-    height: 600px;
-    width: 100%;
-    background-image: url("../img/profile.jpeg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+  height: 600px;
+  width: 100%;
+  background-image: url("../img/profile.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .about section {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .my-skills,
 .education {
-    margin-right: 0;
-    margin-left: 0;
-    color: var(--main-color);
+  margin-right: 0;
+  margin-left: 0;
+  color: var(--main-color);
 }
 
 .icon-box {
-    display: flex;
-    align-items: center;
-    padding: 20px;
-    height: 100%;
-    color: var(--main-color);
-    /* transition: ease-in-out 0.3s; */
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  height: 100%;
+  color: var(--main-color);
+  /* transition: ease-in-out 0.3s; */
 }
 
 .icon-box img {
-    height: 30px;
-    width: auto;
-    padding-right: 15px;
+  height: 30px;
+  width: auto;
+  padding-right: 15px;
 }
 
 .education-box {
-    padding: 20px;
-    height: 100%;
-    color: var(--main-color);
+  padding: 20px;
+  height: 100%;
+  color: var(--main-color);
 }
 
 .education-box p {
-    line-height: 1.6;
+  line-height: 1.6;
+}
+
+/* ------------------------------ */
+/* -------- MEDIA SCREEN -------- */
+/* ------------------------------ */
+
+@media screen and (max-width: 768px) {
+  section {
+    flex-direction: column;
+  }
+
+  .about {
+    padding: 20px;
+  }
+
+  .about section {
+    margin-bottom: 0px;
+  }
+
+  .profile-info {
+    margin-right: 0;
+  }
+
+  .flex-end {
+    justify-content: start;
+  }
+
+  .profile-text {
+    flex-direction: column;
+  }
 }
