@@ -8,17 +8,15 @@ document.addEventListener("DOMContentLoaded", function () {
     var portfolioImg = container.querySelector(".portfolio-img");
     var titleToAffect = container.querySelector(".hover-effect h4");
 
-    // Add transition to the title within the container
     if (titleToAffect && window.innerWidth > 768) {
-      titleToAffect.style.transition =
-        "-webkit-font-size 0.3s ease-in-out, font-size 0.3s ease-in-out";
+      titleToAffect.style.transition = "transform 0.3s ease-in-out";
 
-      portfolioImg.addEventListener("mouseover", function () {
-        titleToAffect.style.fontSize = "3.2em";
+      portfolioImg.addEventListener("mouseenter", function () {
+        titleToAffect.style.transform = "scale(1.05)";
       });
 
-      portfolioImg.addEventListener("mouseout", function () {
-        titleToAffect.style.fontSize = "3em";
+      portfolioImg.addEventListener("mouseleave", function () {
+        titleToAffect.style.transform = "scale(1)";
       });
     }
   });
