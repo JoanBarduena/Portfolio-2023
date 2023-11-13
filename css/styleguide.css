@@ -201,7 +201,7 @@ a {
   left: 0;
   width: 100%;
   background-color: var(--color-main-medium);
-  bottom: -2px;
+  bottom: 7px;
   transition: 0.5s;
   border-radius: 4px;
 }
