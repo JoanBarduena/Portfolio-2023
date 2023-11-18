@@ -42,8 +42,9 @@
 }
 
 .profile-pic img {
-  width: auto;
-  height: 500px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .about section {
