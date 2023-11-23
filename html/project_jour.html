@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project - Jour</title>
+
+    <base href="../" />
+    <link rel="stylesheet" href="css/styleguide.css" />
+    <link rel="stylesheet" href="css/project.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body onload="dataTheme()" id="projectID">
+    <div id="theme-container">
+      <img src="img/moon.svg" id="theme-icon" onclick="switchTheme()" />
+    </div>
+
+    <div class="project display-flex">
+      <div class="back-button">
+        <a href="javascript:void(0);" onclick="goBack()"
+          ><i class="bx bx-left-arrow-alt"></i
+        ></a>
+      </div>
+      <div class="project-left display-flex flex-column">
+        <div class="project-info">
+          <div class="project-title display-flex">
+            <div>Jour</div>
+            <div class="icons">
+                <a href="https://www.figma.com/proto/X110kURK3d6pWKFjusIYpj/UX-Case-Study%3A-Jour?type=design&node-id=1-2&t=p33tjKlOEok4vytE-1&scaling=contain&page-id=0%3A1&mode=design" target="_blank" title="figma">
+                    <div class="fa-brands fa-figma fa-sm"></div>
+                </a>
+            </div>
+          </div>
+          <div class="project-data">
+            <div><strong>Category: </strong> Mobile App</div>
+            <div><strong>Year: </strong> 2023</div>
+            <div><strong>Team Size: </strong> Myself</div>
+          </div>
+          <div class="project-text">
+           <p>At the start of each academic year, students search for the perfect tool that helps them to organize their studies. </p>
+           <p>However, it's difficult to find an all-in-one productive tool that is not too complex to learn or it's incomplete if the premium option isn't purchased. This application would help students to plan their time to be more productive. Besides, it is simple to learn, intuitive and free.</p>
+           <p>Jour is an intuitive mobile application design. It has been deleveloped in Figma for a UX Case Study. There is an <a href="https://www.figma.com/proto/8dxEUAUY9C5RuPiMDSvaWN/Untitled?page-id=0%3A1&node-id=56-853&viewport=265%2C270%2C0.08&scaling=scale-down&starting-point-node-id=56%3A853&show-proto-sidebar=1&mode=design&t=a03CRopwRdTsjhvS-1">interactive prototype</a> for the app as well as a <a href="https://www.figma.com/proto/X110kURK3d6pWKFjusIYpj/UX-Case-Study%3A-Jour?type=design&node-id=1-2&t=p33tjKlOEok4vytE-1&scaling=contain&page-id=0%3A1&mode=design">case study presentation</a>.</p>
+          </div>
+        </div>
+      </div>
+      <div class="project-carrousel display-flex flex-column">
+        <img class="project-img" src="img/projects/jour_2.png" alt="" />
+        <img class="project-img" src="img/projects/jour_3.png" alt="" />
+        <img class="project-img" src="img/projects/jour_4.png" alt="" />
+        <img class="project-img" src="img/projects/jour_5.png" alt="" />
+        <img class="project-img" src="img/projects/jour_6.png" alt="" />
+        <img class="project-img" src="img/projects/jour_7.png" alt="" />
+      </div>
+    </div>
+
+    <div class="cursor">
+      <div class="cursor-ball cursor-ball-big">
+        <svg height="30" width="30">
+          <circle cx="15" cy="15" r="12" stroke-width="0"></circle>
+        </svg>
+      </div>
+      <div class="cursor-ball cursor-ball-small">
+        <svg height="10" width="10">
+          <circle cx="5" cy="5" r="4" stroke-width="0"></circle>
+        </svg>
+      </div>
+    </div>
+  </body>
+
+  <script src="js/functions.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+  <script src="js/cursor.js"></script>
+  <script
+    src="https://kit.fontawesome.com/8ccb274948.js"
+    crossorigin="anonymous"
+  ></script>
+</html>
