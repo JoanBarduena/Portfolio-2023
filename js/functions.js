@@ -130,21 +130,17 @@ if (storedTheme && (storedTheme === "Dark" || storedTheme === "Light")) {
 
 //----- ADD ANCHOR ELEMENTS CLASS="HOVERABLE"
 var links = document.querySelectorAll("a");
-var titles = document.querySelectorAll("h4");
+var projectImages = document.querySelectorAll(".project-carrousel img");
+
 links.forEach(function (link) {
   link.classList.add("hoverable");
 });
 
-// ----- SET IFRAME HEIGHT AS PROJECT-IMAGES
-// function setIframeHeight() {
-//     var imgHeight = document.querySelector('.project-img').clientHeight;
-//     document.getElementById('video-iframe').style.height = imgHeight + 'px';
-// }
+projectImages.forEach(function(image){
+  image.classList.add("hoverable");
+})
 
-// setIframeHeight();
-// window.addEventListener('resize', setIframeHeight);
-
-// ----- PROJECT GO-BACK BUTTON ANCHOR LINK
+// ----- PROJECT GO-BACK BUTTON ANCHOR LINK -----
 function goBack() {
   if (history.length > 1) {
     history.back();
@@ -155,3 +151,29 @@ function goBack() {
 window.addEventListener("popstate", function (event) {
   var currentURL = window.location.pathname;
 });
+
+
+// ----- MODAL FOR PROJECTS IMAGES -----
+const modal = document.getElementById("modal");
+var images = document.querySelectorAll("img.project-img");
+var modalImage = document.getElementById("modal-img");
+
+for (let i = 0; i < images.length; i++) {
+  images[i].onclick = function () {
+    modal.style.display = "flex";
+    modalImage.src = this.src;
+  };
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function () {
+  modal.style.display = "none";
+};
+
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+};
+
