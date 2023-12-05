@@ -136,22 +136,21 @@ links.forEach(function (link) {
   link.classList.add("hoverable");
 });
 
-projectImages.forEach(function(image){
+projectImages.forEach(function (image) {
   image.classList.add("hoverable");
-})
+});
 
 // ----- PROJECT GO-BACK BUTTON ANCHOR LINK -----
 function goBack() {
   if (history.length > 1) {
     history.back();
   } else {
-    window.location.href = "/html/index.html#portfolio"; //go back to Projects title if not history
+    window.location.href = "/index.html#portfolio"; //go back to Projects title if not history
   }
 }
 window.addEventListener("popstate", function (event) {
   var currentURL = window.location.pathname;
 });
-
 
 // ----- MODAL FOR PROJECTS IMAGES -----
 const modal = document.getElementById("modal");
@@ -176,4 +175,3 @@ window.onclick = function (event) {
     modal.style.display = "none";
   }
 };
-

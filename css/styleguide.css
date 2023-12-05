@@ -41,10 +41,6 @@ body {
   color: var(--secondary-color);
 }
 
-main {
-  padding: 2.6em;
-}
-
 header {
   margin-right: auto;
   margin-left: auto;
@@ -417,7 +413,7 @@ a {
 }
 
 .portfolio-img {
-  width: 600px;
+  width: 650px;
   max-height: 100%;
 
   box-shadow: 0px 10px 20px 0 rgba(0, 0, 0, 0.4);
@@ -494,6 +490,31 @@ a {
 /* ------------------------------ */
 /* -------- MEDIA SCREEN -------- */
 /* ------------------------------ */
+@media screen and (max-width: 1450px) {
+  .container {
+    max-width: 85%;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .container {
+    max-width: 92%;
+  }
+
+  .portfolio-img {
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .container {
+    max-width: 97%;
+  }
+
+  .portfolio-img {
+    width: 450px;
+  }
+}
 
 @media screen and (max-width: 768px) {
   ul.main-nav {
