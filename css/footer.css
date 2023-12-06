@@ -107,8 +107,32 @@ footer section {
 /* ------------------------------ */
 /* -------- MEDIA SCREEN -------- */
 /* ------------------------------ */
+@media screen and (max-width: 1500px) {
+  footer {
+    padding: 3em;
+  }
 
-@media screen and (max-width: 768px) {
+  .contact {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  footer {
+    padding: 1.5em;
+  }
+
+  .contact {
+    width: 100%;
+  }
+
+  footer section {
+    width: 80%;
+  }
+}
+
+
+@media screen and (max-width: 950px) {
   footer {
     height: auto;
     margin: 0;

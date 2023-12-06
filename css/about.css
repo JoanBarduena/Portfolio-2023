@@ -6,6 +6,14 @@
   padding-bottom: 5em;
 }
 
+.about-left {
+  width: 30%;
+}
+
+.about-right {
+  width: 60%;
+}
+
 .profile-title {
   border-bottom: 2px solid var(--main-color);
   padding: 10px 0;
@@ -87,10 +95,21 @@
 /* -------- MEDIA SCREEN -------- */
 /* ------------------------------ */
 
-@media screen and (max-width: 768px) {
-  section {
+@media screen and (max-width: 1500px) {
+  .about {
+    padding: 1em;
+  }
+
+  .about-right {
+    width: 100%;
+  }
+
+  .about section {
     flex-direction: column;
   }
+}
+
+@media screen and (max-width: 768px) {
 
   .about {
     padding: 20px;
